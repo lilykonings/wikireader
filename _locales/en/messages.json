@@ -1,0 +1,10 @@
+{
+  "extName":  {
+    "message": "WikiReader",
+    "description": "The extension name."
+  },
+  "extDescription": {
+    "message": "Minimize Wikipedia",
+    "description": "The extension description."
+  }
+}

@@ -1,0 +1,583 @@
+@import url("http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic");
+@import "../uikit.variables.scss";
+@import "../uikit.utility.scss";
+@import "../uikit.grid.scss";
+@import "../uikit.button.scss";
+@import "../uikit.form.scss";
+
+@font-face {
+  font-family: "crimson400";
+  font-style: normal;
+  font-weight: 400;
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/crimson400.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: "crimson400-ita";
+  font-style: italic;
+  font-weight: 400;
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/crimson400-ita.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: "crimson700";
+  font-style: normal;
+  font-weight: 400;
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/crimson700.woff2') format("woff2");
+}
+
+// variables
+$base-font-family: "crimson400", serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$white:						 #fff;
+$black:						 #000;
+
+$text-color:       $black;
+$background-color: $white;
+// $brand-color:      #92a75d;
+// $brand-color-light: lighten($brand-color, 40%);
+// $brand-color-dark: darken($brand-color, 25%);
+
+$grey-color: lighten($black, 40%);
+$grey-color-light:  lighten($grey-color, 40%);
+
+$content-width:    1024px;
+$on-small:         480px;
+$on-medium:        768px;
+$on-large:         960px;
+
+@mixin media-query($device) {
+	@media screen and (min-width: $device) {
+		@content;
+	}
+}
+
+#www-wikipedia-org,
+.mediawiki {
+	html {
+		font-family: $base-font-family;
+		color: $text-color;
+	}
+	body, h1, h2, h3, h4, h5, h6,
+	pre, hr, dl, dd, ol, ul, figure {
+		margin: 0;
+		padding: 0;
+		font-family: $base-font-family;
+		color: $text-color;
+	}
+	body {
+		min-height: 100%;
+		padding: 10px;
+		font-family: $base-font-family;
+		font-size: $base-font-size;
+		line-height: $base-line-height;
+		font-weight: 300;
+		color: $text-color;
+		background-color: $background-color;
+		-webkit-text-size-adjust: 100%;
+	}
+}
+
+#www-wikipedia-org {
+	i {
+		font-family: "crimson400-ita";
+		font-style: normal;
+	}
+
+	b {
+		font-family: "crimson700";
+		font-style: normal;
+	}
+
+	a {
+		color: $grey-color-light;
+
+		&:hover {
+			color: $grey-color;
+			text-decoration: none;
+		}
+	}
+
+	// .central-textlogo,
+	.central-featured,
+	.bookshelf-container,
+	.langlist {
+		display: none;
+	}
+
+	.central-textlogo {
+		margin-top: 225px;
+	}
+
+	.search-container {
+		margin-bottom: 250px;
+
+		.search-form {
+			@extend .uk-form;
+
+			fieldset {
+				background: none;
+				border: none;
+
+				#searchInput {
+					@extend .uk-width-3-5;
+					@extend .uk-form-large;
+					display: block;
+					margin: 0 auto;
+					font-family: $base-font-family;
+
+					&:focus {
+						border-color: #ddd;
+					}
+				}
+
+				#searchLanguage {
+					display: none;
+				}
+			}
+		}
+
+		.search-form {
+			.formBtn {
+				display: none;
+			}
+		}
+	}
+
+	.language-search {
+		margin: 0 auto;
+		height: auto;
+	}
+
+	.otherprojects-item {
+		a {
+			color: $grey-color;
+
+			.icon {
+				-webkit-filter: grayscale(100%);
+				filter: grayscale(100%);
+				opacity: 0.25;
+			}
+
+			&:hover {
+				color: $black;
+
+				.icon {
+					-webkit-filter: grayscale(0);
+					filter: grayscale(0);
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+.mediawiki {
+	background-color: $white;
+
+	i {
+		font-family: "crimson400-ita";
+		font-style: normal !important;
+	}
+
+	b {
+		font-family: "crimson700";
+		font-weight: normal !important;
+	}
+
+	#mw-page-base,
+	#protected-icon,
+	.mw-editsection {
+		display: none !important;
+	}
+
+	#mw-navigation {
+		#mw-head {
+			// position: fixed;
+			border-bottom: 1px solid #ccc;
+			background-color: $white;
+
+			#p-personal,
+			#left-navigation {
+				display: none;
+			}
+
+			#right-navigation {
+				float: left;
+				@extend .uk-width-small-9-10;
+				@extend .uk-width-medium-7-10;
+				margin-left: 5%;
+				margin-top: 10px;
+				margin-bottom: 10px;
+
+				@include media-query($on-medium) {
+			  	margin-left: 15%;
+			  }
+
+				#p-views {
+					display: none;
+				}
+
+				#p-search {
+					float: right;
+					margin: 0;
+
+					form {
+						@extend .uk-form;
+
+						margin-top: 0;
+
+						#simpleSearch {
+							height: auto;
+							border: 0;
+							margin-top: 0;
+
+							#searchInput {
+								font-size: 12px;
+							}
+
+							#searchButton {
+								@extend .uk-button;
+								background-image: url(//bits.wikimedia.org/static-1.25wmf22/skins/Vector/images/search-ltr.png);
+								background-repeat: no-repeat;
+								background-position: center;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		#mw-panel {
+			display: none;
+		}
+	}
+
+	#content {
+		@extend .uk-width-small-9-10;
+		@extend .uk-width-medium-7-10;
+		margin: 150px auto 0;
+		border: none;
+
+		#firstHeading {
+			border: none;
+			margin-bottom: -5px;
+			font-family: "crimson400-ita";
+			font-style: italic;
+			font-size: 3em;
+			text-align: center;
+		}
+
+		#bodyContent {
+			text-align: center;
+
+			#siteSub {
+				font-family: sans-serif;
+				font-size: 92%;
+				color: $grey-color-light;
+			}
+
+			#mw-content-text {
+				margin-top: 30px;
+				text-align: left;
+				font-size: 16px;
+
+				@mixin border-bottom-link() {
+					a {
+						border-bottom: 1px solid #0645ad;
+
+						&:visited {
+							border-bottom-color: #0b0080;
+						}
+
+						&:hover,
+						&:focus {
+							text-decoration: none;
+						}
+					}
+
+					a.image {
+						border: none;
+					}
+				}
+
+				> .hatnote {
+					margin: 25px 0;
+					padding: 0 2em;
+					font-family: "crimson400-ita";
+					font-size: $base-font-size;
+					color: $grey-color-light;
+
+					a {
+						color: $grey-color-light;
+						text-decoration: underline;
+
+						&:hover {
+							color: $grey-color;
+						}
+					}
+				}
+
+				.mw-headline {
+					font-family: "crimson700";
+					font-weight: normal;
+				}
+
+				> h2 {
+					border-bottom: none;
+					margin-top: 50px;
+
+					.mw-headline {
+						font-size: 25px;
+					}
+				}
+
+				> h3 {
+					margin-top: 30px;
+
+					.mw-headline {
+						font-size: 18px;
+					}
+				}
+
+				> h4 {
+					margin-top: 15px;
+
+					.mw-headline {
+						font-size: 16px;
+					}
+				}
+
+				> .relarticle {
+					margin: 0;
+					margin-top: -5px;
+					padding: 0;
+					font-family: sans-serif;
+					font-size: 12px;
+					font-style: normal;
+					color: $grey-color-light;
+				}
+
+				> p {
+					margin-top: 15px;
+					margin-bottom: 15px;
+					font-family: $base-font-family;
+					line-height: 25px;
+					font-size: 18px;
+
+					@include border-bottom-link();
+				}
+
+				> dl {
+					margin: 25px 0;
+					padding: 15px 0;
+					background-color: #eee;
+
+					dd {
+						line-height: 24px;
+						font-size: 18px;
+					}
+
+					dt {
+						margin-left: 1.6em;
+						font-family: "crimson700";
+						font-size: 18px;
+					}
+				}
+
+				> pre {
+					font-family: courier;
+					font-weight: normal;
+					font-style: normal;
+					font-size: 12px;
+
+					b {
+						font-family: courier;
+						font-weight: bold;
+						font-style: normal;
+					}
+
+					i {
+						font-family: courier;
+						font-weight: normal;
+						font-style: italic;
+					}
+				}
+
+				> ul,
+				> ol {
+					li {
+						font-family: $base-font-family;
+						font-size: 18px;
+
+						@include border-bottom-link();
+					}
+				}
+
+				> .hlist {
+					ul {
+						li {
+							a {
+								border: none;
+								font-family: sans-serif;
+								font-size: 14px;
+								color: $grey-color-light;
+								text-decoration: underline;
+
+								&:hover {
+									color: $grey-color;
+								}
+							}
+						}
+					}
+				}
+
+				> table {
+					margin-bottom: 25px !important;
+					border-color: #ccc;
+					background-color: $white;
+
+					@include border-bottom-link();
+
+					i {
+						font-family: sans-serif;
+						font-style: italic !important;
+					}
+
+					b {
+						font-family: sans-serif;
+						font-weight: bold !important;
+					}
+
+					> tr > th,
+					> * > tr > th {
+						padding: 15px 0;
+						background-color: #eee;
+					}
+				}
+
+				.infobox {
+					tr {
+						th {
+							padding-left: 10px;
+							padding-right: 10px;
+						}
+						td {
+							padding: 15px 10px;
+						}
+					}
+				}
+
+				.ambox {
+					display: none;
+				}
+
+				#toc {
+					margin: 25px 0;
+					padding: 15px;
+					background-color: $white;
+
+					#toctitle {
+						h2 {
+							font-family: "crimson700";
+							font-size: 20px;
+						}
+
+						.toctoggle {
+							display: none;
+						}
+					}
+
+					> ul {
+						margin-top: 20px;
+						font-family: $base-font-family;
+
+						li {
+							a {
+								font-family: sans-serif;
+								font-size: 14px;
+								color: $black;
+
+								.tocnumber {
+									font-family: $base-font-family;
+									font-size: $base-font-size;
+								}
+								.toctext {
+									border-bottom: 1px solid $black;
+								}
+
+								&:hover {
+									text-decoration: none;
+								}
+							}
+						}
+					}
+				}
+
+				> .thumb {
+					.thumbinner {
+						padding: 7px;
+						background-color: $white;
+					}
+				}
+
+				.portal {
+					padding: 10px;
+
+					table {
+						background-color: $white !important;
+
+						@include border-bottom-link();
+
+						a {
+							font-style: normal;
+							color: $black;
+						}
+					}
+				}
+
+				.div-col,
+				.refbegin {
+					ul {
+						margin-left: 0;
+						list-style: none;
+
+						li {
+							font-family: $base-font-family;
+							font-size: $base-font-size;
+
+							a {
+								border-bottom: 1px solid $black;
+								font-family: sans-serif;
+								font-size: 14px;
+								color: $black;
+
+								&:hover {
+									text-decoration: none;
+								}
+							}
+						}
+					}
+				}
+
+				.reflist {
+					ol {
+						li {
+							font-family: $base-font-family;
+							font-size: $base-font-size;
+
+							.reference-text {
+								@include border-bottom-link();
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
