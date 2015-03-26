@@ -1,0 +1,14 @@
+@import "base.scss";
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	font-family: "crimson400";
+	text-align: center;
+
+	.header {
+		font-family: "crimson400-ita";
+		font-style: italic;
+	}
+}

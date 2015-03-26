@@ -20,33 +20,31 @@ if (jQuery) {
     });
   }
 
-  var storeCSS = function(filename) {
-    $.ajax({
-        url: "wiki.css",
-        dataType: "text",
-        success: function(css) {
-          $("#test").innerText = "success";
-          storage.set({'css': css});
-        }
-    }).fail(function() {
-      $("#test").innerText = "failure";
-    });
-  }
+  // var storeCSS = function(filename) {
+  //   $.ajax({
+  //       url: "wiki.css",
+  //       dataType: "text",
+  //       success: function(css) {
+  //         $("#test").innerText = "success";
+  //         storage.set({'css': css});
+  //       }
+  //   }).fail(function() {
+  //     $("#test").innerText = "failure";
+  //   });
+  // }
 
-  var injectCSS = function(filename) {
-    var css = chrome.extension.getURL(filename);
-    storage.get('css', function(value) {
-      console.log(value);
-      if (value.filename) {
-        chrome.tabs.insertCSS({code: value.filename})
-      }
-    });
-  }
+  // var injectCSS = function(filename) {
+  //   var css = chrome.extension.getURL(filename);
+  //   storage.get('css', function(value) {
+  //     console.log(value);
+  //     if (value.filename) {
+  //       chrome.tabs.insertCSS({code: value.filename})
+  //     }
+  //   });
+  // }
 
   chrome.runtime.onInstalled.addListener(function() {
-    storeCSS("wiki");
-    // optionsPage();
-    injectCSS("wiki");
+    optionsPage();
   });
 
   chrome.extension.onConnect.addListener(function(port) {
