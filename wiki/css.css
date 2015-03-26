@@ -2187,6 +2187,13 @@ select.uk-form-width-mini {
       font-style: italic;
       font-size: 3em;
       text-align: center; }
+      .mediawiki #content #firstHeading i {
+        font-family: "crimson400";
+        font-style: normal; }
+      .mediawiki #content #firstHeading b {
+        font-family: "crimson700";
+        font-style: italic;
+        font-weight: normal; }
     .mediawiki #content #bodyContent {
       text-align: center; }
       .mediawiki #content #bodyContent #siteSub {
@@ -2195,7 +2202,8 @@ select.uk-form-width-mini {
         color: #cccccc; }
       .mediawiki #content #bodyContent #mw-content-text {
         margin-top: 30px;
-        text-align: left; }
+        text-align: left;
+        font-size: 16px; }
         .mediawiki #content #bodyContent #mw-content-text > .hatnote {
           margin: 25px 0;
           padding: 0 2em;
@@ -2246,16 +2254,40 @@ select.uk-form-width-mini {
           .mediawiki #content #bodyContent #mw-content-text > p a.image {
             border: none; }
         .mediawiki #content #bodyContent #mw-content-text > dl {
-          margin: 25px 0;
           padding: 15px 0;
+          margin: 25px 0;
           background-color: #eee; }
           .mediawiki #content #bodyContent #mw-content-text > dl dd {
+            margin-right: 1.6em;
             line-height: 24px;
             font-size: 18px; }
           .mediawiki #content #bodyContent #mw-content-text > dl dt {
+            margin-top: 15px;
+            margin-right: 1.6em;
             margin-left: 1.6em;
             font-family: "crimson700";
             font-size: 18px; }
+        .mediawiki #content #bodyContent #mw-content-text > pre,
+        .mediawiki #content #bodyContent #mw-content-text code,
+        .mediawiki #content #bodyContent #mw-content-text .mw-code {
+          font-family: courier;
+          font-weight: normal;
+          font-style: normal;
+          font-size: 12px; }
+          .mediawiki #content #bodyContent #mw-content-text > pre b,
+          .mediawiki #content #bodyContent #mw-content-text code b,
+          .mediawiki #content #bodyContent #mw-content-text .mw-code b {
+            font-family: courier;
+            font-weight: bold !important;
+            font-style: normal !important; }
+          .mediawiki #content #bodyContent #mw-content-text > pre i,
+          .mediawiki #content #bodyContent #mw-content-text code i,
+          .mediawiki #content #bodyContent #mw-content-text .mw-code i {
+            font-family: courier;
+            font-weight: normal !important;
+            font-style: italic !important; }
+        .mediawiki #content #bodyContent #mw-content-text > pre {
+          padding: 10px; }
         .mediawiki #content #bodyContent #mw-content-text > ul li,
         .mediawiki #content #bodyContent #mw-content-text > ol li {
           font-family: "crimson400", serif;
@@ -2273,6 +2305,8 @@ select.uk-form-width-mini {
           .mediawiki #content #bodyContent #mw-content-text > ul li a.image,
           .mediawiki #content #bodyContent #mw-content-text > ol li a.image {
             border: none; }
+        .mediawiki #content #bodyContent #mw-content-text .texhtml {
+          font-size: 16px; }
         .mediawiki #content #bodyContent #mw-content-text > .hlist ul li a {
           border: none;
           font-family: sans-serif;
@@ -2284,7 +2318,8 @@ select.uk-form-width-mini {
         .mediawiki #content #bodyContent #mw-content-text > table {
           margin-bottom: 25px !important;
           border-color: #ccc;
-          background-color: white; }
+          background-color: white;
+          font-size: 14px; }
           .mediawiki #content #bodyContent #mw-content-text > table a {
             border-bottom: 1px solid #0645ad; }
             .mediawiki #content #bodyContent #mw-content-text > table a:visited {
@@ -2301,7 +2336,7 @@ select.uk-form-width-mini {
             font-weight: bold !important; }
           .mediawiki #content #bodyContent #mw-content-text > table > tr > th,
           .mediawiki #content #bodyContent #mw-content-text > table > * > tr > th {
-            padding: 15px 0;
+            padding: 15px;
             background-color: #eee; }
         .mediawiki #content #bodyContent #mw-content-text .infobox tr th {
           padding-left: 10px;
