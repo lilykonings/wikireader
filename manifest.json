@@ -34,7 +34,8 @@
   ],
 
   "web_accessible_resources": [
-    "fonts/*.woff2"
+    "fonts/*.woff2",
+    "logo.png"
   ],
 
   "permissions": [

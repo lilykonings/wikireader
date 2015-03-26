@@ -198,7 +198,7 @@ $on-large:         960px;
 
 	#mw-navigation {
 		#mw-head {
-			// position: fixed;
+			position: fixed;
 			border-bottom: 1px solid #ccc;
 			background-color: $white;
 
@@ -220,7 +220,16 @@ $on-large:         960px;
 			  }
 
 				#p-views {
-					display: none;
+					float: left;
+					height: 30px;
+					width: 34px;
+					background-image: url("chrome-extension://__MSG_@@extension_id__/logo.png");
+					background-size: contain;
+
+					#p-views-label,
+					ul {
+						display: none;
+					}
 				}
 
 				#p-search {

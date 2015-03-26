@@ -1714,7 +1714,7 @@
   .uk-form input[type="color"]:focus,
   #www-wikipedia-org .search-container .search-form input[type="color"]:focus,
   .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="color"]:focus {
-    border-color: #444444;
+    border-color: #dddddd;
     outline: 0;
     background: white;
     color: #444444; }
@@ -2145,6 +2145,7 @@ select.uk-form-width-mini {
   .mediawiki .mw-editsection {
     display: none !important; }
   .mediawiki #mw-navigation #mw-head {
+    position: fixed;
     border-bottom: 1px solid #ccc;
     background-color: white; }
     .mediawiki #mw-navigation #mw-head #p-personal,
@@ -2159,7 +2160,14 @@ select.uk-form-width-mini {
         .mediawiki #mw-navigation #mw-head #right-navigation {
           margin-left: 15%; } }
       .mediawiki #mw-navigation #mw-head #right-navigation #p-views {
-        display: none; }
+        float: left;
+        height: 30px;
+        width: 34px;
+        background-image: url("chrome-extension://__MSG_@@extension_id__/logo.png");
+        background-size: contain; }
+        .mediawiki #mw-navigation #mw-head #right-navigation #p-views #p-views-label,
+        .mediawiki #mw-navigation #mw-head #right-navigation #p-views ul {
+          display: none; }
       .mediawiki #mw-navigation #mw-head #right-navigation #p-search {
         float: right;
         margin: 0; }
