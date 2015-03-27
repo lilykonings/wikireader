@@ -6,28 +6,28 @@
 @import "uikit/form.scss";
 
 @font-face {
-  font-family: "crimson400";
+  font-family: "Crimson";
   font-style: normal;
   font-weight: 400;
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/crimson400.woff2') format("woff2");
 }
 
 @font-face {
-  font-family: "crimson400-ita";
+  font-family: "Crimson";
   font-style: italic;
   font-weight: 400;
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/crimson400-ita.woff2') format("woff2");
 }
 
 @font-face {
-  font-family: "crimson700";
+  font-family: "Crimson";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/crimson700.woff2') format("woff2");
 }
 
 // variables
-$base-font-family: "crimson400", serif;
+$base-font-family: "Crimson", serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;

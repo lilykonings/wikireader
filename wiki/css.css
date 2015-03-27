@@ -2034,23 +2034,23 @@ select.uk-form-width-mini {
   padding-right: 30px !important; }
 
 @font-face {
-  font-family: "crimson400";
+  font-family: "Crimson";
   font-style: normal;
   font-weight: 400;
   src: url("chrome-extension://__MSG_@@extension_id__/fonts/crimson400.woff2") format("woff2"); }
 @font-face {
-  font-family: "crimson400-ita";
+  font-family: "Crimson";
   font-style: italic;
   font-weight: 400;
   src: url("chrome-extension://__MSG_@@extension_id__/fonts/crimson400-ita.woff2") format("woff2"); }
 @font-face {
-  font-family: "crimson700";
+  font-family: "Crimson";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   src: url("chrome-extension://__MSG_@@extension_id__/fonts/crimson700.woff2") format("woff2"); }
 #www-wikipedia-org html,
 .mediawiki html {
-  font-family: "crimson400", serif;
+  font-family: "Crimson", serif;
   color: black; }
 #www-wikipedia-org body, #www-wikipedia-org h1, #www-wikipedia-org h2, #www-wikipedia-org h3, #www-wikipedia-org h4, #www-wikipedia-org h5, #www-wikipedia-org h6,
 #www-wikipedia-org pre, #www-wikipedia-org hr, #www-wikipedia-org dl, #www-wikipedia-org dd, #www-wikipedia-org ol, #www-wikipedia-org ul, #www-wikipedia-org figure,
@@ -2070,13 +2070,12 @@ select.uk-form-width-mini {
 .mediawiki figure {
   margin: 0;
   padding: 0;
-  font-family: "crimson400", serif;
   color: black; }
 #www-wikipedia-org body,
 .mediawiki body {
   min-height: 100%;
   padding: 10px;
-  font-family: "crimson400", serif;
+  font-family: "Crimson", serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
@@ -2084,12 +2083,6 @@ select.uk-form-width-mini {
   background-color: white;
   -webkit-text-size-adjust: 100%; }
 
-#www-wikipedia-org i {
-  font-family: "crimson400-ita";
-  font-style: normal; }
-#www-wikipedia-org b {
-  font-family: "crimson700";
-  font-style: normal; }
 #www-wikipedia-org a {
   color: #cccccc; }
   #www-wikipedia-org a:hover {
@@ -2109,7 +2102,7 @@ select.uk-form-width-mini {
     #www-wikipedia-org .search-container .search-form fieldset #searchInput {
       display: block;
       margin: 0 auto;
-      font-family: "crimson400", serif; }
+      font-family: "Crimson", serif; }
       #www-wikipedia-org .search-container .search-form fieldset #searchInput:focus {
         border-color: #ddd; }
     #www-wikipedia-org .search-container .search-form fieldset #searchLanguage {
@@ -2134,12 +2127,6 @@ select.uk-form-width-mini {
 
 .mediawiki {
   background-color: white; }
-  .mediawiki i {
-    font-family: "crimson400-ita";
-    font-style: normal !important; }
-  .mediawiki b {
-    font-family: "crimson700";
-    font-weight: normal !important; }
   .mediawiki #mw-page-base,
   .mediawiki #protected-icon,
   .mediawiki .mw-editsection {
@@ -2191,17 +2178,10 @@ select.uk-form-width-mini {
     .mediawiki #content #firstHeading {
       border: none;
       margin-bottom: -5px;
-      font-family: "crimson400-ita";
+      font-family: "Crimson", serif;
       font-style: italic;
       font-size: 3em;
       text-align: center; }
-      .mediawiki #content #firstHeading i {
-        font-family: "crimson400";
-        font-style: normal; }
-      .mediawiki #content #firstHeading b {
-        font-family: "crimson700";
-        font-style: italic;
-        font-weight: normal; }
     .mediawiki #content #bodyContent {
       text-align: center; }
       .mediawiki #content #bodyContent #siteSub {
@@ -2215,8 +2195,9 @@ select.uk-form-width-mini {
         .mediawiki #content #bodyContent #mw-content-text > .hatnote {
           margin: 25px 0;
           padding: 0 2em;
-          font-family: "crimson400-ita";
+          font-family: "Crimson", serif;
           font-size: 16px;
+          font-style: italic;
           color: #cccccc; }
           .mediawiki #content #bodyContent #mw-content-text > .hatnote a {
             color: #cccccc;
@@ -2224,8 +2205,8 @@ select.uk-form-width-mini {
             .mediawiki #content #bodyContent #mw-content-text > .hatnote a:hover {
               color: #666666; }
         .mediawiki #content #bodyContent #mw-content-text .mw-headline {
-          font-family: "crimson700";
-          font-weight: normal; }
+          font-family: "Crimson", serif;
+          font-weight: 700; }
         .mediawiki #content #bodyContent #mw-content-text > h2 {
           border-bottom: none;
           margin-top: 50px; }
@@ -2250,7 +2231,7 @@ select.uk-form-width-mini {
         .mediawiki #content #bodyContent #mw-content-text > p {
           margin-top: 15px;
           margin-bottom: 15px;
-          font-family: "crimson400", serif;
+          font-family: "Crimson", serif;
           line-height: 25px;
           font-size: 18px; }
           .mediawiki #content #bodyContent #mw-content-text > p a {
@@ -2261,10 +2242,15 @@ select.uk-form-width-mini {
               text-decoration: none; }
           .mediawiki #content #bodyContent #mw-content-text > p a.image {
             border: none; }
+        .mediawiki #content #bodyContent #mw-content-text blockquote,
+        .mediawiki #content #bodyContent #mw-content-text .templatequote {
+          font-family: "Crimson", serif;
+          color: #666666; }
         .mediawiki #content #bodyContent #mw-content-text > dl {
           padding: 15px 0;
           margin: 25px 0;
-          background-color: #eee; }
+          background-color: #eee;
+          font-family: "Crimson", serif; }
           .mediawiki #content #bodyContent #mw-content-text > dl dd {
             margin-right: 1.6em;
             line-height: 24px;
@@ -2273,7 +2259,7 @@ select.uk-form-width-mini {
             margin-top: 15px;
             margin-right: 1.6em;
             margin-left: 1.6em;
-            font-family: "crimson700";
+            font-weight: 700;
             font-size: 18px; }
         .mediawiki #content #bodyContent #mw-content-text > pre,
         .mediawiki #content #bodyContent #mw-content-text code,
@@ -2282,23 +2268,11 @@ select.uk-form-width-mini {
           font-weight: normal;
           font-style: normal;
           font-size: 12px; }
-          .mediawiki #content #bodyContent #mw-content-text > pre b,
-          .mediawiki #content #bodyContent #mw-content-text code b,
-          .mediawiki #content #bodyContent #mw-content-text .mw-code b {
-            font-family: courier;
-            font-weight: bold !important;
-            font-style: normal !important; }
-          .mediawiki #content #bodyContent #mw-content-text > pre i,
-          .mediawiki #content #bodyContent #mw-content-text code i,
-          .mediawiki #content #bodyContent #mw-content-text .mw-code i {
-            font-family: courier;
-            font-weight: normal !important;
-            font-style: italic !important; }
         .mediawiki #content #bodyContent #mw-content-text > pre {
           padding: 10px; }
         .mediawiki #content #bodyContent #mw-content-text > ul li,
         .mediawiki #content #bodyContent #mw-content-text > ol li {
-          font-family: "crimson400", serif;
+          font-family: "Crimson", serif;
           font-size: 18px; }
           .mediawiki #content #bodyContent #mw-content-text > ul li a,
           .mediawiki #content #bodyContent #mw-content-text > ol li a {
@@ -2327,6 +2301,7 @@ select.uk-form-width-mini {
           margin-bottom: 25px !important;
           border-color: #ccc;
           background-color: white;
+          font-family: sans-serif;
           font-size: 14px; }
           .mediawiki #content #bodyContent #mw-content-text > table a {
             border-bottom: 1px solid #0645ad; }
@@ -2336,12 +2311,9 @@ select.uk-form-width-mini {
               text-decoration: none; }
           .mediawiki #content #bodyContent #mw-content-text > table a.image {
             border: none; }
-          .mediawiki #content #bodyContent #mw-content-text > table i {
-            font-family: sans-serif;
-            font-style: italic !important; }
+          .mediawiki #content #bodyContent #mw-content-text > table i,
           .mediawiki #content #bodyContent #mw-content-text > table b {
-            font-family: sans-serif;
-            font-weight: bold !important; }
+            font-family: sans-serif; }
           .mediawiki #content #bodyContent #mw-content-text > table > tr > th,
           .mediawiki #content #bodyContent #mw-content-text > table > * > tr > th {
             padding: 15px;
@@ -2358,27 +2330,32 @@ select.uk-form-width-mini {
           padding: 15px;
           background-color: white; }
           .mediawiki #content #bodyContent #mw-content-text #toc #toctitle h2 {
-            font-family: "crimson700";
+            font-family: "Crimson", serif;
+            font-weight: 700;
             font-size: 20px; }
           .mediawiki #content #bodyContent #mw-content-text #toc #toctitle .toctoggle {
             display: none; }
           .mediawiki #content #bodyContent #mw-content-text #toc > ul {
             margin-top: 20px;
-            font-family: "crimson400", serif; }
+            font-family: "Crimson", serif; }
             .mediawiki #content #bodyContent #mw-content-text #toc > ul li a {
               font-family: sans-serif;
               font-size: 14px;
               color: black; }
               .mediawiki #content #bodyContent #mw-content-text #toc > ul li a .tocnumber {
-                font-family: "crimson400", serif;
+                font-family: "Crimson", serif;
                 font-size: 16px; }
               .mediawiki #content #bodyContent #mw-content-text #toc > ul li a .toctext {
                 border-bottom: 1px solid black; }
               .mediawiki #content #bodyContent #mw-content-text #toc > ul li a:hover {
                 text-decoration: none; }
-        .mediawiki #content #bodyContent #mw-content-text > .thumb .thumbinner {
+        .mediawiki #content #bodyContent #mw-content-text .thumb .thumbinner {
           padding: 7px;
           background-color: white; }
+        .mediawiki #content #bodyContent #mw-content-text .thumb .thumbcaption {
+          margin-top: 7px;
+          font-family: sans-serif;
+          font-size: 12px; }
         .mediawiki #content #bodyContent #mw-content-text .portal {
           padding: 10px; }
           .mediawiki #content #bodyContent #mw-content-text .portal table {
@@ -2400,7 +2377,7 @@ select.uk-form-width-mini {
           list-style: none; }
           .mediawiki #content #bodyContent #mw-content-text .div-col ul li,
           .mediawiki #content #bodyContent #mw-content-text .refbegin ul li {
-            font-family: "crimson400", serif;
+            font-family: "Crimson", serif;
             font-size: 16px; }
             .mediawiki #content #bodyContent #mw-content-text .div-col ul li a,
             .mediawiki #content #bodyContent #mw-content-text .refbegin ul li a {
@@ -2412,7 +2389,7 @@ select.uk-form-width-mini {
               .mediawiki #content #bodyContent #mw-content-text .refbegin ul li a:hover {
                 text-decoration: none; }
         .mediawiki #content #bodyContent #mw-content-text .reflist ol li {
-          font-family: "crimson400", serif;
+          font-family: "Crimson", serif;
           font-size: 16px; }
           .mediawiki #content #bodyContent #mw-content-text .reflist ol li .reference-text a {
             border-bottom: 1px solid #0645ad; }

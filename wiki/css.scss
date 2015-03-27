@@ -10,7 +10,6 @@
 	pre, hr, dl, dd, ol, ul, figure {
 		margin: 0;
 		padding: 0;
-		font-family: $base-font-family;
 		color: $text-color;
 	}
 	body {
@@ -27,16 +26,6 @@
 }
 
 #www-wikipedia-org {
-	i {
-		font-family: "crimson400-ita";
-		font-style: normal;
-	}
-
-	b {
-		font-family: "crimson700";
-		font-style: normal;
-	}
-
 	a {
 		color: $grey-color-light;
 
@@ -122,16 +111,6 @@
 
 .mediawiki {
 	background-color: $white;
-
-	i {
-		font-family: "crimson400-ita";
-		font-style: normal !important;
-	}
-
-	b {
-		font-family: "crimson700";
-		font-weight: normal !important;
-	}
 
 	#mw-page-base,
 	#protected-icon,
@@ -219,21 +198,10 @@
 		#firstHeading {
 			border: none;
 			margin-bottom: -5px;
-			font-family: "crimson400-ita";
+			font-family: $base-font-family;
 			font-style: italic;
 			font-size: 3em;
 			text-align: center;
-
-			i {
-				font-family: "crimson400";
-				font-style: normal;
-			}
-
-			b {
-				font-family: "crimson700";
-				font-style: italic;
-				font-weight: normal;
-			}
 		}
 
 		#bodyContent {
@@ -272,8 +240,9 @@
 				> .hatnote {
 					margin: 25px 0;
 					padding: 0 2em;
-					font-family: "crimson400-ita";
+					font-family: $base-font-family;
 					font-size: $base-font-size;
+					font-style: italic;
 					color: $grey-color-light;
 
 					a {
@@ -287,8 +256,8 @@
 				}
 
 				.mw-headline {
-					font-family: "crimson700";
-					font-weight: normal;
+					font-family: $base-font-family;
+					font-weight: 700;
 				}
 
 				> h2 {
@@ -336,10 +305,17 @@
 					@include border-bottom-link();
 				}
 
+				blockquote,
+				.templatequote {
+					font-family: $base-font-family;
+					color: $grey-color;
+				}
+
 				> dl {
 					padding: 15px 0;
 					margin: 25px 0;
 					background-color: #eee;
+					font-family: $base-font-family;
 
 					dd {
 						margin-right: 1.6em;
@@ -351,7 +327,7 @@
 						margin-top: 15px;
 						margin-right: 1.6em;
 						margin-left: 1.6em;
-						font-family: "crimson700";
+						font-weight: 700;
 						font-size: 18px;
 					}
 				}
@@ -363,18 +339,6 @@
 					font-weight: normal;
 					font-style: normal;
 					font-size: 12px;
-
-					b {
-						font-family: courier;
-						font-weight: bold !important;
-						font-style: normal !important;
-					}
-
-					i {
-						font-family: courier;
-						font-weight: normal !important;
-						font-style: italic !important;
-					}
 				}
 
 				> pre {
@@ -417,18 +381,14 @@
 					margin-bottom: 25px !important;
 					border-color: #ccc;
 					background-color: $white;
+					font-family: sans-serif;
 					font-size: 14px;
 
 					@include border-bottom-link();
 
-					i {
-						font-family: sans-serif;
-						font-style: italic !important;
-					}
-
+					i,
 					b {
 						font-family: sans-serif;
-						font-weight: bold !important;
 					}
 
 					> tr > th,
@@ -461,7 +421,8 @@
 
 					#toctitle {
 						h2 {
-							font-family: "crimson700";
+							font-family: $base-font-family;
+							font-weight: 700;
 							font-size: 20px;
 						}
 
@@ -496,10 +457,16 @@
 					}
 				}
 
-				> .thumb {
+				.thumb {
 					.thumbinner {
 						padding: 7px;
 						background-color: $white;
+					}
+
+					.thumbcaption {
+						margin-top: 7px;
+						font-family: sans-serif;
+						font-size: 12px;
 					}
 				}
 
