@@ -5,7 +5,7 @@
 
   "name": "WikiReader",
   "description": "Minimize Wikipedia",
-  "version": "0.1",
+  "version": "0.2",
 
   "icons": { "16": "icon16.png",
              "48": "icon48.png",
@@ -29,7 +29,8 @@
   "content_scripts": [
     {
       "matches": ["http://*.wikipedia.org/*"],
-      "css" : ["wiki/css.css"]
+      "css": ["wiki.css"],
+      "js": ["jquery.js","wiki.js"]
     }
   ],
 
