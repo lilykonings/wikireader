@@ -2429,3 +2429,32 @@ select.uk-form-width-mini {
               text-decoration: none; }
           .mediawiki #content #bodyContent #mw-content-text .reflist ol li .reference-text a.image {
             border: none; }
+
+.page-Main_Page #content {
+  margin: 50px auto 0; }
+  .page-Main_Page #content #mw-content-text {
+    margin-top: 0; }
+    .page-Main_Page #content #mw-content-text #mp-topbanner {
+      padding: 20px;
+      background: white !important; }
+      .page-Main_Page #content #mw-content-text #mp-topbanner tbody tr td:first-child table tbody tr td a {
+        border-bottom: 0;
+        text-decoration: underline; }
+      .page-Main_Page #content #mw-content-text #mp-topbanner tbody tr td:first-child table tbody tr td div:first-child {
+        font-family: "Crimson", serif;
+        font-size: 25px;
+        font-weight: 700; }
+        .page-Main_Page #content #mw-content-text #mp-topbanner tbody tr td:first-child table tbody tr td div:first-child a {
+          color: black; }
+      .page-Main_Page #content #mw-content-text #mp-topbanner tbody tr td:first-child table tbody tr td div {
+        color: #cccccc; }
+        .page-Main_Page #content #mw-content-text #mp-topbanner tbody tr td:first-child table tbody tr td div a {
+          color: #cccccc; }
+      .page-Main_Page #content #mw-content-text #mp-topbanner tbody tr td ul {
+        list-style: none; }
+        .page-Main_Page #content #mw-content-text #mp-topbanner tbody tr td ul li a {
+          border-bottom-color: black;
+          color: black; }
+    .page-Main_Page #content #mw-content-text #mp-upper table tbody tr td.MainPageBG {
+      border-color: #666666 !important;
+      background: white !important; }

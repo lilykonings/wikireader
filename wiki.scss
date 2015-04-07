@@ -568,3 +568,75 @@
 		}
 	}
 }
+
+.page-Main_Page {
+	#content {
+		margin: 50px auto 0;
+
+		#mw-content-text {
+			margin-top: 0;
+
+			#mp-topbanner {
+				padding: 20px;
+				background: $white !important;
+
+				tbody tr {
+					td:first-child {
+						table tbody tr td {
+							a {
+								border-bottom: 0;
+								text-decoration: underline;
+							}
+
+							div:first-child {
+								font-family: $base-font-family;
+								font-size: 25px;
+								font-weight: 700;
+
+								a {
+									color: $black;
+								}
+							}
+
+							div {
+								color: $grey-color-light;
+
+								a {
+									color: $grey-color-light;
+								}
+							}
+						}
+					}
+
+					td {
+						ul {
+							list-style: none;
+
+							li {
+								a {
+									border-bottom-color: $black;
+									color: $black;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			#mp-upper {
+				table {
+					tbody tr {
+						td.MainPageBG {
+							border-color: $grey-color !important;
+							background: $white !important;
+						}
+					}
+				}
+
+				#mp-left {
+
+				}
+			}
+		}
+	}
+}
