@@ -36,7 +36,9 @@
 
   "web_accessible_resources": [
     "fonts/*.woff2",
-    "logo.png"
+    "logo.png",
+    "search.svg",
+    "menu.svg"
   ],
 
   "permissions": [

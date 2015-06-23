@@ -2048,6 +2048,9 @@ select.uk-form-width-mini {
   font-style: normal;
   font-weight: 700;
   src: url("chrome-extension://__MSG_@@extension_id__/fonts/crimson700.woff2") format("woff2"); }
+.no-display {
+  display: none !important; }
+
 #www-wikipedia-org html,
 .mediawiki html {
   font-family: "Crimson", serif;
@@ -2152,8 +2155,18 @@ select.uk-form-width-mini {
         float: left;
         height: 30px;
         width: 34px;
+        border: 2px solid #fff;
+        border-radius: 5px;
         background-image: url("chrome-extension://__MSG_@@extension_id__/logo.png");
         background-size: contain; }
+        .mediawiki #mw-navigation #mw-head #right-navigation #p-views.override {
+          border-color: #ccc;
+          background-image: url("chrome-extension://__MSG_@@extension_id__/menu.svg");
+          background-size: 18px;
+          background-position: center; }
+          .mediawiki #mw-navigation #mw-head #right-navigation #p-views.override:hover {
+            cursor: pointer;
+            border-color: #000; }
         .mediawiki #mw-navigation #mw-head #right-navigation #p-views #p-views-label,
         .mediawiki #mw-navigation #mw-head #right-navigation #p-views ul {
           display: none; }
@@ -2169,7 +2182,7 @@ select.uk-form-width-mini {
             .mediawiki #mw-navigation #mw-head #right-navigation #p-search form #simpleSearch #searchInput {
               font-size: 12px; }
             .mediawiki #mw-navigation #mw-head #right-navigation #p-search form #simpleSearch #searchButton {
-              background-image: url(//bits.wikimedia.org/static-1.25wmf22/skins/Vector/images/search-ltr.png);
+              background-image: url("chrome-extension://__MSG_@@extension_id__/search.svg");
               background-repeat: no-repeat;
               background-position: center; }
   .mediawiki #mw-navigation #mw-panel {
@@ -2359,6 +2372,13 @@ select.uk-form-width-mini {
           margin: 25px 0;
           padding: 15px;
           background-color: white; }
+          .mediawiki #content #bodyContent #mw-content-text #toc.override {
+            display: block;
+            position: fixed;
+            height: 75%;
+            overflow-y: scroll;
+            top: 54px;
+            margin: 0; }
           .mediawiki #content #bodyContent #mw-content-text #toc #toctitle h2 {
             font-family: "Crimson", serif;
             font-weight: 700;

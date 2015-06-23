@@ -34,8 +34,8 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$white:						 #fff;
-$black:						 #000;
+$white:            #fff;
+$black:            #000;
 
 $text-color:       $black;
 $background-color: $white;
@@ -52,7 +52,11 @@ $on-medium:        768px;
 $on-large:         960px;
 
 @mixin media-query($device) {
-	@media screen and (min-width: $device) {
-		@content;
-	}
+  @media screen and (min-width: $device) {
+    @content;
+  }
+}
+
+.no-display {
+  display: none !important;
 }
