@@ -28,7 +28,7 @@
 
   "content_scripts": [
     {
-      "matches": ["http://*.wikipedia.org/*"],
+      "matches": ["*://*.wikipedia.org/*"],
       "css": ["wiki.css"],
       "js": ["jquery.js","wiki.js"]
     }
