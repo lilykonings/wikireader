@@ -478,10 +478,14 @@
           &.override {
             display: block;
             position: fixed;
-            height: 75%;
+            max-height: 75%;
             overflow-y: scroll;
             top: 54px;
             margin: 0;
+          }
+
+          &::-webkit-scrollbar { 
+            display: none; 
           }
 
           #toctitle {

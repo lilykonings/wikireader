@@ -2375,10 +2375,12 @@ select.uk-form-width-mini {
           .mediawiki #content #bodyContent #mw-content-text #toc.override {
             display: block;
             position: fixed;
-            height: 75%;
+            max-height: 75%;
             overflow-y: scroll;
             top: 54px;
             margin: 0; }
+          .mediawiki #content #bodyContent #mw-content-text #toc::-webkit-scrollbar {
+            display: none; }
           .mediawiki #content #bodyContent #mw-content-text #toc #toctitle h2 {
             font-family: "Crimson", serif;
             font-weight: 700;
