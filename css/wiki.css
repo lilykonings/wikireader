@@ -810,7 +810,7 @@
 .uk-width-4-10 {
   width: 40%; }
 
-.uk-width-3-5, #www-wikipedia-org .search-container .search-form fieldset #searchInput,
+.uk-width-3-5,
 .uk-width-6-10 {
   width: 60%; }
 
@@ -1349,9 +1349,9 @@
  * 3. Remove `border-radius` in iOS.
  * 4. Correct `font` properties and `color` not being inherited.
  */
-.uk-form input, #www-wikipedia-org .search-container .search-form input, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input,
-.uk-form select, #www-wikipedia-org .search-container .search-form select, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select,
-.uk-form textarea, #www-wikipedia-org .search-container .search-form textarea, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea {
+.uk-form input, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input,
+.uk-form select, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select,
+.uk-form textarea, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea {
   /* 1 */
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1366,7 +1366,7 @@
 /*
  * Address inconsistent `text-transform` inheritance which is only inherit in Firefox
  */
-.uk-form select, #www-wikipedia-org .search-container .search-form select, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select {
+.uk-form select, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select {
   text-transform: none; }
 
 /*
@@ -1374,7 +1374,7 @@
  * 2. Don't inherit the `font-weight` and use `bold` instead.
  * NOTE: Both declarations don't work in Chrome, Safari and Opera.
  */
-.uk-form optgroup, #www-wikipedia-org .search-container .search-form optgroup, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form optgroup {
+.uk-form optgroup, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form optgroup {
   /* 1 */
   font: inherit;
   /* 2 */
@@ -1383,44 +1383,44 @@
 /*
  * Removes inner padding and border in Firefox 4+.
  */
-.uk-form input::-moz-focus-inner, #www-wikipedia-org .search-container .search-form input::-moz-focus-inner, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input::-moz-focus-inner {
+.uk-form input::-moz-focus-inner, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
 /*
  * Removes excess padding in IE 8/9/10.
  */
-.uk-form input[type="checkbox"], #www-wikipedia-org .search-container .search-form input[type="checkbox"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="checkbox"],
-.uk-form input[type="radio"], #www-wikipedia-org .search-container .search-form input[type="radio"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="radio"] {
+.uk-form input[type="checkbox"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="checkbox"],
+.uk-form input[type="radio"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="radio"] {
   padding: 0; }
 
 /*
  * Improves consistency of cursor style for clickable elements
  */
-.uk-form input[type="checkbox"]:not(:disabled), #www-wikipedia-org .search-container .search-form input[type="checkbox"]:not(:disabled), .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="checkbox"]:not(:disabled),
-.uk-form input[type="radio"]:not(:disabled), #www-wikipedia-org .search-container .search-form input[type="radio"]:not(:disabled), .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="radio"]:not(:disabled) {
+.uk-form input[type="checkbox"]:not(:disabled), .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="checkbox"]:not(:disabled),
+.uk-form input[type="radio"]:not(:disabled), .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="radio"]:not(:disabled) {
   cursor: pointer; }
 
 /*
  * Remove default style in iOS.
  */
-.uk-form textarea, #www-wikipedia-org .search-container .search-form textarea, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea,
-.uk-form input:not([type]), #www-wikipedia-org .search-container .search-form input:not([type]), .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input:not([type]),
-.uk-form input[type="text"], #www-wikipedia-org .search-container .search-form input[type="text"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="text"],
-.uk-form input[type="password"], #www-wikipedia-org .search-container .search-form input[type="password"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="password"],
-.uk-form input[type="email"], #www-wikipedia-org .search-container .search-form input[type="email"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="email"],
-.uk-form input[type="url"], #www-wikipedia-org .search-container .search-form input[type="url"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="url"],
-.uk-form input[type="search"], #www-wikipedia-org .search-container .search-form input[type="search"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"],
-.uk-form input[type="tel"], #www-wikipedia-org .search-container .search-form input[type="tel"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="tel"],
-.uk-form input[type="number"], #www-wikipedia-org .search-container .search-form input[type="number"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"],
-.uk-form input[type="datetime"], #www-wikipedia-org .search-container .search-form input[type="datetime"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime"] {
+.uk-form textarea, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea,
+.uk-form input:not([type]), .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input:not([type]),
+.uk-form input[type="text"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="text"],
+.uk-form input[type="password"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="password"],
+.uk-form input[type="email"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="email"],
+.uk-form input[type="url"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="url"],
+.uk-form input[type="search"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"],
+.uk-form input[type="tel"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="tel"],
+.uk-form input[type="number"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"],
+.uk-form input[type="datetime"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime"] {
   -webkit-appearance: none; }
 
 /*
  * Remove inner padding and search cancel button in Chrome, Safari and Opera on OS X.
  */
-.uk-form input[type="search"]::-webkit-search-cancel-button, #www-wikipedia-org .search-container .search-form input[type="search"]::-webkit-search-cancel-button, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"]::-webkit-search-cancel-button,
-.uk-form input[type="search"]::-webkit-search-decoration, #www-wikipedia-org .search-container .search-form input[type="search"]::-webkit-search-decoration, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"]::-webkit-search-decoration {
+.uk-form input[type="search"]::-webkit-search-cancel-button, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"]::-webkit-search-cancel-button,
+.uk-form input[type="search"]::-webkit-search-decoration, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /*
@@ -1428,14 +1428,14 @@
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-.uk-form input[type="number"]::-webkit-inner-spin-button, #www-wikipedia-org .search-container .search-form input[type="number"]::-webkit-inner-spin-button, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"]::-webkit-inner-spin-button,
-.uk-form input[type="number"]::-webkit-outer-spin-button, #www-wikipedia-org .search-container .search-form input[type="number"]::-webkit-outer-spin-button, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"]::-webkit-outer-spin-button {
+.uk-form input[type="number"]::-webkit-inner-spin-button, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"]::-webkit-inner-spin-button,
+.uk-form input[type="number"]::-webkit-outer-spin-button, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
 /*
  * Define consistent border, margin, and padding.
  */
-.uk-form fieldset, #www-wikipedia-org .search-container .search-form fieldset, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form fieldset {
+.uk-form fieldset, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form fieldset {
   border: none;
   margin: 0;
   padding: 0; }
@@ -1444,7 +1444,7 @@
  * 1. Remove default vertical scrollbar in IE 8/9/10/11.
  * 2. Improve readability and alignment in all browsers.
  */
-.uk-form textarea, #www-wikipedia-org .search-container .search-form textarea, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea {
+.uk-form textarea, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea {
   /* 1 */
   overflow: auto;
   /* 2 */
@@ -1453,20 +1453,20 @@
 /*
  * Removes placeholder transparency in Firefox.
  */
-.uk-form ::-moz-placeholder, #www-wikipedia-org .search-container .search-form ::-moz-placeholder, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form ::-moz-placeholder {
+.uk-form ::-moz-placeholder, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form ::-moz-placeholder {
   opacity: 1; }
 
 /*
  * Removes `box-shadow` for invalid controls in Firefox.
  */
-.uk-form :invalid, #www-wikipedia-org .search-container .search-form :invalid, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form :invalid {
+.uk-form :invalid, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form :invalid {
   box-shadow: none; }
 
 /*
  * Vertical alignment
  */
-.uk-form input:not([type="radio"]):not([type="checkbox"]), #www-wikipedia-org .search-container .search-form input:not([type="radio"]):not([type="checkbox"]), .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input:not([type="radio"]):not([type="checkbox"]),
-.uk-form select, #www-wikipedia-org .search-container .search-form select, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select {
+.uk-form input:not([type="radio"]):not([type="checkbox"]), .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input:not([type="radio"]):not([type="checkbox"]),
+.uk-form select, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select {
   vertical-align: middle; }
 
 /* Style
@@ -1474,7 +1474,7 @@
 /*
  * Remove margin from the last-child
  */
-.uk-form > :last-child, #www-wikipedia-org .search-container .search-form > :last-child, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form > :last-child {
+.uk-form > :last-child, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form > :last-child {
   margin-bottom: 0; }
 
 /*
@@ -1485,23 +1485,23 @@
  * 3. Vertical `padding` needed for `select` elements in Firefox
  * 4. Style
  */
-.uk-form select, #www-wikipedia-org .search-container .search-form select, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select,
-.uk-form textarea, #www-wikipedia-org .search-container .search-form textarea, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea,
-.uk-form input:not([type]), #www-wikipedia-org .search-container .search-form input:not([type]), .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input:not([type]),
-.uk-form input[type="text"], #www-wikipedia-org .search-container .search-form input[type="text"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="text"],
-.uk-form input[type="password"], #www-wikipedia-org .search-container .search-form input[type="password"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="password"],
-.uk-form input[type="datetime"], #www-wikipedia-org .search-container .search-form input[type="datetime"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime"],
-.uk-form input[type="datetime-local"], #www-wikipedia-org .search-container .search-form input[type="datetime-local"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime-local"],
-.uk-form input[type="date"], #www-wikipedia-org .search-container .search-form input[type="date"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="date"],
-.uk-form input[type="month"], #www-wikipedia-org .search-container .search-form input[type="month"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="month"],
-.uk-form input[type="time"], #www-wikipedia-org .search-container .search-form input[type="time"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="time"],
-.uk-form input[type="week"], #www-wikipedia-org .search-container .search-form input[type="week"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="week"],
-.uk-form input[type="number"], #www-wikipedia-org .search-container .search-form input[type="number"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"],
-.uk-form input[type="email"], #www-wikipedia-org .search-container .search-form input[type="email"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="email"],
-.uk-form input[type="url"], #www-wikipedia-org .search-container .search-form input[type="url"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="url"],
-.uk-form input[type="search"], #www-wikipedia-org .search-container .search-form input[type="search"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"],
-.uk-form input[type="tel"], #www-wikipedia-org .search-container .search-form input[type="tel"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="tel"],
-.uk-form input[type="color"], #www-wikipedia-org .search-container .search-form input[type="color"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="color"] {
+.uk-form select, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select,
+.uk-form textarea, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea,
+.uk-form input:not([type]), .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input:not([type]),
+.uk-form input[type="text"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="text"],
+.uk-form input[type="password"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="password"],
+.uk-form input[type="datetime"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime"],
+.uk-form input[type="datetime-local"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime-local"],
+.uk-form input[type="date"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="date"],
+.uk-form input[type="month"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="month"],
+.uk-form input[type="time"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="time"],
+.uk-form input[type="week"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="week"],
+.uk-form input[type="number"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"],
+.uk-form input[type="email"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="email"],
+.uk-form input[type="url"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="url"],
+.uk-form input[type="search"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"],
+.uk-form input[type="tel"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="tel"],
+.uk-form input[type="color"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="color"] {
   /* 1 */
   height: 30px;
   /* 2 */
@@ -1512,44 +1512,44 @@
   border: 1px solid #ddd;
   background: #fff;
   color: #444; }
-  .uk-form select:focus, #www-wikipedia-org .search-container .search-form select:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select:focus,
-  .uk-form textarea:focus, #www-wikipedia-org .search-container .search-form textarea:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea:focus,
-  .uk-form input:not([type]):focus, #www-wikipedia-org .search-container .search-form input:not([type]):focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input:not([type]):focus,
-  .uk-form input[type="text"]:focus, #www-wikipedia-org .search-container .search-form input[type="text"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="text"]:focus,
-  .uk-form input[type="password"]:focus, #www-wikipedia-org .search-container .search-form input[type="password"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="password"]:focus,
-  .uk-form input[type="datetime"]:focus, #www-wikipedia-org .search-container .search-form input[type="datetime"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime"]:focus,
-  .uk-form input[type="datetime-local"]:focus, #www-wikipedia-org .search-container .search-form input[type="datetime-local"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime-local"]:focus,
-  .uk-form input[type="date"]:focus, #www-wikipedia-org .search-container .search-form input[type="date"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="date"]:focus,
-  .uk-form input[type="month"]:focus, #www-wikipedia-org .search-container .search-form input[type="month"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="month"]:focus,
-  .uk-form input[type="time"]:focus, #www-wikipedia-org .search-container .search-form input[type="time"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="time"]:focus,
-  .uk-form input[type="week"]:focus, #www-wikipedia-org .search-container .search-form input[type="week"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="week"]:focus,
-  .uk-form input[type="number"]:focus, #www-wikipedia-org .search-container .search-form input[type="number"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"]:focus,
-  .uk-form input[type="email"]:focus, #www-wikipedia-org .search-container .search-form input[type="email"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="email"]:focus,
-  .uk-form input[type="url"]:focus, #www-wikipedia-org .search-container .search-form input[type="url"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="url"]:focus,
-  .uk-form input[type="search"]:focus, #www-wikipedia-org .search-container .search-form input[type="search"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"]:focus,
-  .uk-form input[type="tel"]:focus, #www-wikipedia-org .search-container .search-form input[type="tel"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="tel"]:focus,
-  .uk-form input[type="color"]:focus, #www-wikipedia-org .search-container .search-form input[type="color"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="color"]:focus {
+  .uk-form select:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select:focus,
+  .uk-form textarea:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea:focus,
+  .uk-form input:not([type]):focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input:not([type]):focus,
+  .uk-form input[type="text"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="text"]:focus,
+  .uk-form input[type="password"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="password"]:focus,
+  .uk-form input[type="datetime"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime"]:focus,
+  .uk-form input[type="datetime-local"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime-local"]:focus,
+  .uk-form input[type="date"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="date"]:focus,
+  .uk-form input[type="month"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="month"]:focus,
+  .uk-form input[type="time"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="time"]:focus,
+  .uk-form input[type="week"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="week"]:focus,
+  .uk-form input[type="number"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"]:focus,
+  .uk-form input[type="email"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="email"]:focus,
+  .uk-form input[type="url"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="url"]:focus,
+  .uk-form input[type="search"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"]:focus,
+  .uk-form input[type="tel"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="tel"]:focus,
+  .uk-form input[type="color"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="color"]:focus {
     border-color: #ddd;
     outline: 0;
     background: #fff;
     color: #444; }
-  .uk-form select:disabled, #www-wikipedia-org .search-container .search-form select:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select:disabled,
-  .uk-form textarea:disabled, #www-wikipedia-org .search-container .search-form textarea:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea:disabled,
-  .uk-form input:not([type]):disabled, #www-wikipedia-org .search-container .search-form input:not([type]):disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input:not([type]):disabled,
-  .uk-form input[type="text"]:disabled, #www-wikipedia-org .search-container .search-form input[type="text"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="text"]:disabled,
-  .uk-form input[type="password"]:disabled, #www-wikipedia-org .search-container .search-form input[type="password"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="password"]:disabled,
-  .uk-form input[type="datetime"]:disabled, #www-wikipedia-org .search-container .search-form input[type="datetime"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime"]:disabled,
-  .uk-form input[type="datetime-local"]:disabled, #www-wikipedia-org .search-container .search-form input[type="datetime-local"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime-local"]:disabled,
-  .uk-form input[type="date"]:disabled, #www-wikipedia-org .search-container .search-form input[type="date"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="date"]:disabled,
-  .uk-form input[type="month"]:disabled, #www-wikipedia-org .search-container .search-form input[type="month"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="month"]:disabled,
-  .uk-form input[type="time"]:disabled, #www-wikipedia-org .search-container .search-form input[type="time"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="time"]:disabled,
-  .uk-form input[type="week"]:disabled, #www-wikipedia-org .search-container .search-form input[type="week"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="week"]:disabled,
-  .uk-form input[type="number"]:disabled, #www-wikipedia-org .search-container .search-form input[type="number"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"]:disabled,
-  .uk-form input[type="email"]:disabled, #www-wikipedia-org .search-container .search-form input[type="email"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="email"]:disabled,
-  .uk-form input[type="url"]:disabled, #www-wikipedia-org .search-container .search-form input[type="url"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="url"]:disabled,
-  .uk-form input[type="search"]:disabled, #www-wikipedia-org .search-container .search-form input[type="search"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"]:disabled,
-  .uk-form input[type="tel"]:disabled, #www-wikipedia-org .search-container .search-form input[type="tel"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="tel"]:disabled,
-  .uk-form input[type="color"]:disabled, #www-wikipedia-org .search-container .search-form input[type="color"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="color"]:disabled {
+  .uk-form select:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select:disabled,
+  .uk-form textarea:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea:disabled,
+  .uk-form input:not([type]):disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input:not([type]):disabled,
+  .uk-form input[type="text"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="text"]:disabled,
+  .uk-form input[type="password"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="password"]:disabled,
+  .uk-form input[type="datetime"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime"]:disabled,
+  .uk-form input[type="datetime-local"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime-local"]:disabled,
+  .uk-form input[type="date"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="date"]:disabled,
+  .uk-form input[type="month"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="month"]:disabled,
+  .uk-form input[type="time"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="time"]:disabled,
+  .uk-form input[type="week"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="week"]:disabled,
+  .uk-form input[type="number"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"]:disabled,
+  .uk-form input[type="email"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="email"]:disabled,
+  .uk-form input[type="url"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="url"]:disabled,
+  .uk-form input[type="search"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"]:disabled,
+  .uk-form input[type="tel"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="tel"]:disabled,
+  .uk-form input[type="color"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="color"]:disabled {
     border-color: #ddd;
     background-color: #f5f5f5;
     color: #999; }
@@ -1557,22 +1557,22 @@
 /*
  * Placeholder
  */
-.uk-form :-ms-input-placeholder, #www-wikipedia-org .search-container .search-form :-ms-input-placeholder, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form :-ms-input-placeholder {
+.uk-form :-ms-input-placeholder, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form :-ms-input-placeholder {
   color: #999 !important; }
 
-.uk-form ::-moz-placeholder, #www-wikipedia-org .search-container .search-form ::-moz-placeholder, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form ::-moz-placeholder {
+.uk-form ::-moz-placeholder, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form ::-moz-placeholder {
   color: #999; }
 
-.uk-form ::-webkit-input-placeholder, #www-wikipedia-org .search-container .search-form ::-webkit-input-placeholder, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form ::-webkit-input-placeholder {
+.uk-form ::-webkit-input-placeholder, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form ::-webkit-input-placeholder {
   color: #999; }
 
-.uk-form :disabled:-ms-input-placeholder, #www-wikipedia-org .search-container .search-form :disabled:-ms-input-placeholder, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form :disabled:-ms-input-placeholder {
+.uk-form :disabled:-ms-input-placeholder, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form :disabled:-ms-input-placeholder {
   color: #999 !important; }
 
-.uk-form :disabled::-moz-placeholder, #www-wikipedia-org .search-container .search-form :disabled::-moz-placeholder, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form :disabled::-moz-placeholder {
+.uk-form :disabled::-moz-placeholder, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form :disabled::-moz-placeholder {
   color: #999; }
 
-.uk-form :disabled::-webkit-input-placeholder, #www-wikipedia-org .search-container .search-form :disabled::-webkit-input-placeholder, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form :disabled::-webkit-input-placeholder {
+.uk-form :disabled::-webkit-input-placeholder, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form :disabled::-webkit-input-placeholder {
   color: #999; }
 
 /*
@@ -1584,7 +1584,7 @@
  *    Using `padding` and :after instead to create the border
  * 5. Style
  */
-.uk-form legend, #www-wikipedia-org .search-container .search-form legend, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form legend {
+.uk-form legend, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form legend {
   /* 1 */
   width: 100%;
   /* 2 */
@@ -1600,7 +1600,7 @@
 /*
  * 1. Fixes IE9
  */
-.uk-form legend:after, #www-wikipedia-org .search-container .search-form legend:after, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form legend:after {
+.uk-form legend:after, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form legend:after {
   content: "";
   display: block;
   border-bottom: 1px solid #ddd;
@@ -1618,13 +1618,10 @@ input:not([type]).uk-form-small {
   padding: 3px 3px;
   font-size: 12px; }
 
-select.uk-form-large, #www-wikipedia-org .search-container .search-form fieldset select#searchInput,
+select.uk-form-large,
 textarea.uk-form-large,
-#www-wikipedia-org .search-container .search-form fieldset textarea#searchInput,
 input[type].uk-form-large,
-#www-wikipedia-org .search-container .search-form fieldset input[type]#searchInput,
-input:not([type]).uk-form-large,
-#www-wikipedia-org .search-container .search-form fieldset input#searchInput:not([type]) {
+input:not([type]).uk-form-large {
   height: 40px;
   padding: 8px 6px;
   font-size: 16px; }
@@ -1632,9 +1629,9 @@ input:not([type]).uk-form-large,
 /* Reset height
  * Must be after size modifiers
  ========================================================================== */
-.uk-form textarea, #www-wikipedia-org .search-container .search-form textarea, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea,
-.uk-form select[multiple], #www-wikipedia-org .search-container .search-form select[multiple], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select[multiple],
-.uk-form select[size], #www-wikipedia-org .search-container .search-form select[size], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select[size] {
+.uk-form textarea, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea,
+.uk-form select[multiple], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select[multiple],
+.uk-form select[size], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select[size] {
   height: auto; }
 
 /* Validation states
@@ -1877,27 +1874,23 @@ select.uk-form-width-mini {
     text-decoration: none; }
 
 #www-wikipedia-org .central-featured,
-#www-wikipedia-org .bookshelf-container,
-#www-wikipedia-org .langlist {
+#www-wikipedia-org .bookshelf-container {
   display: none; }
 
+#www-wikipedia-org .langlist ul li a {
+  color: #000; }
+  #www-wikipedia-org .langlist ul li a:hover {
+    text-decoration: underline; }
+
 #www-wikipedia-org .central-textlogo {
-  margin-top: 250px; }
+  margin-top: 250px;
+  margin-bottom: 40px; }
 
 #www-wikipedia-org .search-container {
   margin-bottom: 255px; }
-  #www-wikipedia-org .search-container .search-form fieldset {
-    background: none;
-    border: none; }
-    #www-wikipedia-org .search-container .search-form fieldset #searchInput {
-      display: block;
-      margin: 0 auto;
-      font-family: "Crimson", serif; }
-      #www-wikipedia-org .search-container .search-form fieldset #searchInput:focus {
-        border-color: #ddd; }
-    #www-wikipedia-org .search-container .search-form fieldset #searchLanguage {
-      display: none; }
-  #www-wikipedia-org .search-container .search-form .formBtn {
+  #www-wikipedia-org .search-container .search-input {
+    margin-right: 0; }
+  #www-wikipedia-org .search-container button {
     display: none; }
 
 #www-wikipedia-org .language-search {

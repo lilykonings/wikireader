@@ -1837,3 +1837,10 @@ html, body {
   html .header, body .header {
     font-family: "Crimson", serif;
     font-style: italic; }
+  html .highlight, body .highlight {
+    background: #fefeca; }
+  html .credit, body .credit {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #cccccc;
+    text-decoration: none; }
