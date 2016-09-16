@@ -4,11 +4,11 @@ html, body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
-	font-family: "crimson400";
+	font-family: $base-font-family;
 	text-align: center;
 
 	.header {
-		font-family: "crimson400-ita";
+		font-family: $base-font-family;
 		font-style: italic;
 	}
 }

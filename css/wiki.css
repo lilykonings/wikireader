@@ -1,4 +1,3 @@
-@import url("http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic");
 /* ========================================================================
    Component: Utility
  ========================================================================== */
@@ -15,6 +14,7 @@
   .uk-container {
     max-width: 1200px;
     padding: 0 35px; } }
+
 /*
  * Micro clearfix
  */
@@ -99,11 +99,11 @@
     margin-right: 15px;
     margin-bottom: 15px;
     float: left; }
-
   .uk-align-medium-right {
     margin-left: 15px;
     margin-bottom: 15px;
     float: right; } }
+
 .uk-align-center {
   margin-left: auto;
   margin-right: auto; }
@@ -288,6 +288,7 @@
   .uk-heading-large {
     font-size: 52px;
     line-height: 64px; } }
+
 /* Link
  ========================================================================== */
 /*
@@ -295,11 +296,11 @@
  */
 .uk-link-muted,
 .uk-link-muted a {
-  color: #444444; }
+  color: #444; }
 
 .uk-link-muted:hover,
 .uk-link-muted a:hover {
-  color: #444444; }
+  color: #444; }
 
 /*
  * Reset link style
@@ -330,7 +331,7 @@
   box-sizing: border-box;
   height: 170px;
   padding: 10px;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   resize: both; }
@@ -419,32 +420,29 @@
 @media (min-width: 960px) {
   .uk-visible-small {
     display: none !important; }
-
   .uk-visible-medium {
     display: none !important; }
-
   .uk-hidden-large {
     display: none !important; } }
+
 /* Tablets portrait */
 @media (min-width: 768px) and (max-width: 959px) {
   .uk-visible-small {
     display: none !important; }
-
   .uk-visible-large {
     display: none !important; }
-
   .uk-hidden-medium {
     display: none !important; } }
+
 /* Phone landscape and smaller*/
 @media (max-width: 767px) {
   .uk-visible-medium {
     display: none !important; }
-
   .uk-visible-large {
     display: none !important; }
-
   .uk-hidden-small {
     display: none !important; } }
+
 /* Remove from the flow and screen readers on any device */
 .uk-hidden {
   display: none !important;
@@ -547,15 +545,14 @@
   /* Horizontal */
   .uk-grid {
     margin-left: -35px; }
-
   .uk-grid > * {
     padding-left: 35px; }
-
   /* Vertical */
   .uk-grid + .uk-grid,
   .uk-grid-margin,
   .uk-grid > * > .uk-panel + .uk-panel {
     margin-top: 35px; } }
+
 /*
  * Collapse gutter
  */
@@ -628,39 +625,40 @@
 .uk-grid-divider > [class*='uk-width-7-']:nth-child(n+2),
 .uk-grid-divider > [class*='uk-width-8-']:nth-child(n+2),
 .uk-grid-divider > [class*='uk-width-9-']:nth-child(n+2) {
-  border-left: 1px solid #dddddd; }
+  border-left: 1px solid #ddd; }
 
 /* Tablet and bigger */
 @media (min-width: 768px) {
   .uk-grid-divider > [class*='uk-width-medium-']:not(.uk-width-medium-1-1):nth-child(n+2) {
-    border-left: 1px solid #dddddd; } }
+    border-left: 1px solid #ddd; } }
+
 /* Desktop and bigger */
 @media (min-width: 960px) {
   .uk-grid-divider > [class*='uk-width-large-']:not(.uk-width-large-1-1):nth-child(n+2) {
-    border-left: 1px solid #dddddd; } }
+    border-left: 1px solid #ddd; } }
+
 /* Large screen and bigger */
 @media (min-width: 1220px) {
   /*
-   * Large gutter
-   */
+     * Large gutter
+     */
   .uk-grid-divider:not(:empty) {
     margin-left: -35px;
     margin-right: -35px; }
-
   .uk-grid-divider > * {
     padding-left: 35px;
     padding-right: 35px; }
-
   .uk-grid-divider:empty {
     margin-top: 35px;
     margin-bottom: 35px; } }
+
 /*
  * Vertical divider
  */
 .uk-grid-divider:empty {
   margin-top: 25px;
   margin-bottom: 25px;
-  border-top: 1px solid #dddddd; }
+  border-top: 1px solid #ddd; }
 
 /* Match panels in grids
  ========================================================================== */
@@ -710,78 +708,62 @@
 @media (min-width: 480px) {
   .uk-grid-width-small-1-2 > * {
     width: 50%; }
-
   .uk-grid-width-small-1-3 > * {
     width: 33.333%; }
-
   .uk-grid-width-small-1-4 > * {
     width: 25%; }
-
   .uk-grid-width-small-1-5 > * {
     width: 20%; }
-
   .uk-grid-width-small-1-6 > * {
     width: 16.666%; }
-
   .uk-grid-width-small-1-10 > * {
     width: 10%; } }
+
 /* Tablet and bigger */
 @media (min-width: 768px) {
   .uk-grid-width-medium-1-2 > * {
     width: 50%; }
-
   .uk-grid-width-medium-1-3 > * {
     width: 33.333%; }
-
   .uk-grid-width-medium-1-4 > * {
     width: 25%; }
-
   .uk-grid-width-medium-1-5 > * {
     width: 20%; }
-
   .uk-grid-width-medium-1-6 > * {
     width: 16.666%; }
-
   .uk-grid-width-medium-1-10 > * {
     width: 10%; } }
+
 /* Desktop and bigger */
 @media (min-width: 960px) {
   .uk-grid-width-large-1-2 > * {
     width: 50%; }
-
   .uk-grid-width-large-1-3 > * {
     width: 33.333%; }
-
   .uk-grid-width-large-1-4 > * {
     width: 25%; }
-
   .uk-grid-width-large-1-5 > * {
     width: 20%; }
-
   .uk-grid-width-large-1-6 > * {
     width: 16.666%; }
-
   .uk-grid-width-large-1-10 > * {
     width: 10%; } }
+
 /* Large screen and bigger */
 @media (min-width: 1220px) {
   .uk-grid-width-xlarge-1-2 > * {
     width: 50%; }
-
   .uk-grid-width-xlarge-1-3 > * {
     width: 33.333%; }
-
   .uk-grid-width-xlarge-1-4 > * {
     width: 25%; }
-
   .uk-grid-width-xlarge-1-5 > * {
     width: 20%; }
-
   .uk-grid-width-xlarge-1-6 > * {
     width: 16.666%; }
-
   .uk-grid-width-xlarge-1-10 > * {
     width: 10%; } }
+
 /* Sub-objects: `uk-width-*`
  ========================================================================== */
 [class*='uk-width'] {
@@ -861,196 +843,154 @@
   /* Whole */
   .uk-width-small-1-1 {
     width: 100%; }
-
   /* Halves */
   .uk-width-small-1-2,
   .uk-width-small-2-4,
   .uk-width-small-3-6,
   .uk-width-small-5-10 {
     width: 50%; }
-
   /* Thirds */
   .uk-width-small-1-3,
   .uk-width-small-2-6 {
     width: 33.333%; }
-
   .uk-width-small-2-3,
   .uk-width-small-4-6 {
     width: 66.666%; }
-
   /* Quarters */
   .uk-width-small-1-4 {
     width: 25%; }
-
   .uk-width-small-3-4 {
     width: 75%; }
-
   /* Fifths */
   .uk-width-small-1-5,
   .uk-width-small-2-10 {
     width: 20%; }
-
   .uk-width-small-2-5,
   .uk-width-small-4-10 {
     width: 40%; }
-
   .uk-width-small-3-5,
   .uk-width-small-6-10 {
     width: 60%; }
-
   .uk-width-small-4-5,
   .uk-width-small-8-10 {
     width: 80%; }
-
   /* Sixths */
   .uk-width-small-1-6 {
     width: 16.666%; }
-
   .uk-width-small-5-6 {
     width: 83.333%; }
-
   /* Tenths */
   .uk-width-small-1-10 {
     width: 10%; }
-
   .uk-width-small-3-10 {
     width: 30%; }
-
   .uk-width-small-7-10 {
     width: 70%; }
-
   .uk-width-small-9-10, .mediawiki #mw-navigation #mw-head #right-navigation, .mediawiki #content {
     width: 90%; } }
+
 /* Tablet and bigger */
 @media (min-width: 768px) {
   /* Whole */
   .uk-width-medium-1-1 {
     width: 100%; }
-
   /* Halves */
   .uk-width-medium-1-2,
   .uk-width-medium-2-4,
   .uk-width-medium-3-6,
   .uk-width-medium-5-10 {
     width: 50%; }
-
   /* Thirds */
   .uk-width-medium-1-3,
   .uk-width-medium-2-6 {
     width: 33.333%; }
-
   .uk-width-medium-2-3,
   .uk-width-medium-4-6 {
     width: 66.666%; }
-
   /* Quarters */
   .uk-width-medium-1-4 {
     width: 25%; }
-
   .uk-width-medium-3-4 {
     width: 75%; }
-
   /* Fifths */
   .uk-width-medium-1-5,
   .uk-width-medium-2-10 {
     width: 20%; }
-
   .uk-width-medium-2-5,
   .uk-width-medium-4-10 {
     width: 40%; }
-
   .uk-width-medium-3-5,
   .uk-width-medium-6-10 {
     width: 60%; }
-
   .uk-width-medium-4-5,
   .uk-width-medium-8-10 {
     width: 80%; }
-
   /* Sixths */
   .uk-width-medium-1-6 {
     width: 16.666%; }
-
   .uk-width-medium-5-6 {
     width: 83.333%; }
-
   /* Tenths */
   .uk-width-medium-1-10 {
     width: 10%; }
-
   .uk-width-medium-3-10 {
     width: 30%; }
-
   .uk-width-medium-7-10, .mediawiki #mw-navigation #mw-head #right-navigation, .mediawiki #content {
     width: 70%; }
-
   .uk-width-medium-9-10 {
     width: 90%; } }
+
 /* Desktop and bigger */
 @media (min-width: 960px) {
   /* Whole */
   .uk-width-large-1-1 {
     width: 100%; }
-
   /* Halves */
   .uk-width-large-1-2,
   .uk-width-large-2-4,
   .uk-width-large-3-6,
   .uk-width-large-5-10 {
     width: 50%; }
-
   /* Thirds */
   .uk-width-large-1-3,
   .uk-width-large-2-6 {
     width: 33.333%; }
-
   .uk-width-large-2-3,
   .uk-width-large-4-6 {
     width: 66.666%; }
-
   /* Quarters */
   .uk-width-large-1-4 {
     width: 25%; }
-
   .uk-width-large-3-4 {
     width: 75%; }
-
   /* Fifths */
   .uk-width-large-1-5,
   .uk-width-large-2-10 {
     width: 20%; }
-
   .uk-width-large-2-5,
   .uk-width-large-4-10 {
     width: 40%; }
-
   .uk-width-large-3-5,
   .uk-width-large-6-10 {
     width: 60%; }
-
   .uk-width-large-4-5,
   .uk-width-large-8-10 {
     width: 80%; }
-
   /* Sixths */
   .uk-width-large-1-6 {
     width: 16.666%; }
-
   .uk-width-large-5-6 {
     width: 83.333%; }
-
   /* Tenths */
   .uk-width-large-1-10 {
     width: 10%; }
-
   .uk-width-large-3-10 {
     width: 30%; }
-
   .uk-width-large-7-10 {
     width: 70%; }
-
   .uk-width-large-9-10 {
     width: 90%; } }
+
 /* Sub-object: `uk-push-*` and `uk-pull-*`
  ========================================================================== */
 /*
@@ -1062,132 +1002,103 @@
   [class*='uk-push-'],
   [class*='uk-pull-'] {
     position: relative; }
-
   /*
-   * Push
-   */
+     * Push
+     */
   /* Halves */
   .uk-push-1-2,
   .uk-push-2-4,
   .uk-push-3-6,
   .uk-push-5-10 {
     left: 50%; }
-
   /* Thirds */
   .uk-push-1-3,
   .uk-push-2-6 {
     left: 33.333%; }
-
   .uk-push-2-3,
   .uk-push-4-6 {
     left: 66.666%; }
-
   /* Quarters */
   .uk-push-1-4 {
     left: 25%; }
-
   .uk-push-3-4 {
     left: 75%; }
-
   /* Fifths */
   .uk-push-1-5,
   .uk-push-2-10 {
     left: 20%; }
-
   .uk-push-2-5,
   .uk-push-4-10 {
     left: 40%; }
-
   .uk-push-3-5,
   .uk-push-6-10 {
     left: 60%; }
-
   .uk-push-4-5,
   .uk-push-8-10 {
     left: 80%; }
-
   /* Sixths */
   .uk-push-1-6 {
     left: 16.666%; }
-
   .uk-push-5-6 {
     left: 83.333%; }
-
   /* Tenths */
   .uk-push-1-10 {
     left: 10%; }
-
   .uk-push-3-10 {
     left: 30%; }
-
   .uk-push-7-10 {
     left: 70%; }
-
   .uk-push-9-10 {
     left: 90%; }
-
   /*
-   * Pull
-   */
+     * Pull
+     */
   /* Halves */
   .uk-pull-1-2,
   .uk-pull-2-4,
   .uk-pull-3-6,
   .uk-pull-5-10 {
     left: -50%; }
-
   /* Thirds */
   .uk-pull-1-3,
   .uk-pull-2-6 {
     left: -33.333%; }
-
   .uk-pull-2-3,
   .uk-pull-4-6 {
     left: -66.666%; }
-
   /* Quarters */
   .uk-pull-1-4 {
     left: -25%; }
-
   .uk-pull-3-4 {
     left: -75%; }
-
   /* Fifths */
   .uk-pull-1-5,
   .uk-pull-2-10 {
     left: -20%; }
-
   .uk-pull-2-5,
   .uk-pull-4-10 {
     left: -40%; }
-
   .uk-pull-3-5,
   .uk-pull-6-10 {
     left: -60%; }
-
   .uk-pull-4-5,
   .uk-pull-8-10 {
     left: -80%; }
-
   /* Sixths */
   .uk-pull-1-6 {
     left: -16.666%; }
-
   .uk-pull-5-6 {
     left: -83.333%; }
-
   /* Tenths */
   .uk-pull-1-10 {
     left: -10%; }
-
   .uk-pull-3-10 {
     left: -30%; }
-
   .uk-pull-7-10 {
     left: -70%; }
-
   .uk-pull-9-10 {
     left: -90%; } }
+
 /* ========================================================================
    Component: Button
  ========================================================================== */
@@ -1222,7 +1133,7 @@
   overflow: visible;
   /* 5 */
   font: inherit;
-  color: #444444;
+  color: #444;
   /* 6 */
   text-transform: none;
   /* 7 */
@@ -1230,7 +1141,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 12px;
-  background: #eeeeee;
+  background: #eee;
   vertical-align: middle;
   /* 8 */
   line-height: 30px;
@@ -1254,8 +1165,8 @@
 .uk-button:hover, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form #simpleSearch #searchButton:hover,
 .uk-button:focus,
 .mediawiki #mw-navigation #mw-head #right-navigation #p-search form #simpleSearch #searchButton:focus {
-  background-color: whitesmoke;
-  color: #444444;
+  background-color: #f5f5f5;
+  color: #444;
   /* 2 */
   outline: none;
   /* 3 */
@@ -1265,8 +1176,8 @@
 .uk-button:active, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form #simpleSearch #searchButton:active,
 .uk-button.uk-active,
 .mediawiki #mw-navigation #mw-head #right-navigation #p-search form #simpleSearch .uk-active#searchButton {
-  background-color: #dddddd;
-  color: #444444; }
+  background-color: #ddd;
+  color: #444; }
 
 /* Color modifiers
  ========================================================================== */
@@ -1275,65 +1186,65 @@
  */
 .uk-button-primary {
   background-color: #00a8e6;
-  color: white; }
+  color: #fff; }
 
 /* Hover */
 .uk-button-primary:hover,
 .uk-button-primary:focus {
   background-color: #35b3ee;
-  color: white; }
+  color: #fff; }
 
 /* Active */
 .uk-button-primary:active,
 .uk-button-primary.uk-active {
   background-color: #0091ca;
-  color: white; }
+  color: #fff; }
 
 /*
  * Modifier: `uk-button-success`
  */
 .uk-button-success {
   background-color: #8cc14c;
-  color: white; }
+  color: #fff; }
 
 /* Hover */
 .uk-button-success:hover,
 .uk-button-success:focus {
   background-color: #8ec73b;
-  color: white; }
+  color: #fff; }
 
 /* Active */
 .uk-button-success:active,
 .uk-button-success.uk-active {
   background-color: #72ae41;
-  color: white; }
+  color: #fff; }
 
 /*
  * Modifier: `uk-button-danger`
  */
 .uk-button-danger {
   background-color: #da314b;
-  color: white; }
+  color: #fff; }
 
 /* Hover */
 .uk-button-danger:hover,
 .uk-button-danger:focus {
   background-color: #e4354f;
-  color: white; }
+  color: #fff; }
 
 /* Active */
 .uk-button-danger:active,
 .uk-button-danger.uk-active {
   background-color: #c91032;
-  color: white; }
+  color: #fff; }
 
 /* Disabled state
  * Overrides also the color modifiers
  ========================================================================== */
 /* Equal for all button types */
 .uk-button:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form #simpleSearch #searchButton:disabled {
-  background-color: whitesmoke;
-  color: #999999; }
+  background-color: #f5f5f5;
+  color: #999; }
 
 /* Modifier: `uk-button-link`
  ========================================================================== */
@@ -1349,17 +1260,17 @@
 
 /* Color */
 .uk-button-link {
-  color: #0077dd; }
+  color: #07D; }
 
 .uk-button-link:hover,
 .uk-button-link:focus,
 .uk-button-link:active,
 .uk-button-link.uk-active {
-  color: #005599;
+  color: #059;
   text-decoration: underline; }
 
 .uk-button-link:disabled {
-  color: #999999; }
+  color: #999; }
 
 /* Focus */
 .uk-button-link:focus {
@@ -1439,12 +1350,8 @@
  * 4. Correct `font` properties and `color` not being inherited.
  */
 .uk-form input, #www-wikipedia-org .search-container .search-form input, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input,
-.uk-form select,
-#www-wikipedia-org .search-container .search-form select,
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form select,
-.uk-form textarea,
-#www-wikipedia-org .search-container .search-form textarea,
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea {
+.uk-form select, #www-wikipedia-org .search-container .search-form select, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select,
+.uk-form textarea, #www-wikipedia-org .search-container .search-form textarea, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea {
   /* 1 */
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1484,60 +1391,36 @@
  * Removes excess padding in IE 8/9/10.
  */
 .uk-form input[type="checkbox"], #www-wikipedia-org .search-container .search-form input[type="checkbox"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="checkbox"],
-.uk-form input[type="radio"],
-#www-wikipedia-org .search-container .search-form input[type="radio"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="radio"] {
+.uk-form input[type="radio"], #www-wikipedia-org .search-container .search-form input[type="radio"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="radio"] {
   padding: 0; }
 
 /*
  * Improves consistency of cursor style for clickable elements
  */
 .uk-form input[type="checkbox"]:not(:disabled), #www-wikipedia-org .search-container .search-form input[type="checkbox"]:not(:disabled), .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="checkbox"]:not(:disabled),
-.uk-form input[type="radio"]:not(:disabled),
-#www-wikipedia-org .search-container .search-form input[type="radio"]:not(:disabled),
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="radio"]:not(:disabled) {
+.uk-form input[type="radio"]:not(:disabled), #www-wikipedia-org .search-container .search-form input[type="radio"]:not(:disabled), .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="radio"]:not(:disabled) {
   cursor: pointer; }
 
 /*
  * Remove default style in iOS.
  */
 .uk-form textarea, #www-wikipedia-org .search-container .search-form textarea, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea,
-.uk-form input:not([type]),
-#www-wikipedia-org .search-container .search-form input:not([type]),
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input:not([type]),
-.uk-form input[type="text"],
-#www-wikipedia-org .search-container .search-form input[type="text"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="text"],
-.uk-form input[type="password"],
-#www-wikipedia-org .search-container .search-form input[type="password"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="password"],
-.uk-form input[type="email"],
-#www-wikipedia-org .search-container .search-form input[type="email"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="email"],
-.uk-form input[type="url"],
-#www-wikipedia-org .search-container .search-form input[type="url"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="url"],
-.uk-form input[type="search"],
-#www-wikipedia-org .search-container .search-form input[type="search"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"],
-.uk-form input[type="tel"],
-#www-wikipedia-org .search-container .search-form input[type="tel"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="tel"],
-.uk-form input[type="number"],
-#www-wikipedia-org .search-container .search-form input[type="number"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"],
-.uk-form input[type="datetime"],
-#www-wikipedia-org .search-container .search-form input[type="datetime"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime"] {
+.uk-form input:not([type]), #www-wikipedia-org .search-container .search-form input:not([type]), .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input:not([type]),
+.uk-form input[type="text"], #www-wikipedia-org .search-container .search-form input[type="text"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="text"],
+.uk-form input[type="password"], #www-wikipedia-org .search-container .search-form input[type="password"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="password"],
+.uk-form input[type="email"], #www-wikipedia-org .search-container .search-form input[type="email"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="email"],
+.uk-form input[type="url"], #www-wikipedia-org .search-container .search-form input[type="url"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="url"],
+.uk-form input[type="search"], #www-wikipedia-org .search-container .search-form input[type="search"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"],
+.uk-form input[type="tel"], #www-wikipedia-org .search-container .search-form input[type="tel"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="tel"],
+.uk-form input[type="number"], #www-wikipedia-org .search-container .search-form input[type="number"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"],
+.uk-form input[type="datetime"], #www-wikipedia-org .search-container .search-form input[type="datetime"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime"] {
   -webkit-appearance: none; }
 
 /*
  * Remove inner padding and search cancel button in Chrome, Safari and Opera on OS X.
  */
 .uk-form input[type="search"]::-webkit-search-cancel-button, #www-wikipedia-org .search-container .search-form input[type="search"]::-webkit-search-cancel-button, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"]::-webkit-search-cancel-button,
-.uk-form input[type="search"]::-webkit-search-decoration,
-#www-wikipedia-org .search-container .search-form input[type="search"]::-webkit-search-decoration,
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"]::-webkit-search-decoration {
+.uk-form input[type="search"]::-webkit-search-decoration, #www-wikipedia-org .search-container .search-form input[type="search"]::-webkit-search-decoration, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /*
@@ -1546,9 +1429,7 @@
  * decrement button to change from `default` to `text`.
  */
 .uk-form input[type="number"]::-webkit-inner-spin-button, #www-wikipedia-org .search-container .search-form input[type="number"]::-webkit-inner-spin-button, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"]::-webkit-inner-spin-button,
-.uk-form input[type="number"]::-webkit-outer-spin-button,
-#www-wikipedia-org .search-container .search-form input[type="number"]::-webkit-outer-spin-button,
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"]::-webkit-outer-spin-button {
+.uk-form input[type="number"]::-webkit-outer-spin-button, #www-wikipedia-org .search-container .search-form input[type="number"]::-webkit-outer-spin-button, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
 /*
@@ -1585,9 +1466,7 @@
  * Vertical alignment
  */
 .uk-form input:not([type="radio"]):not([type="checkbox"]), #www-wikipedia-org .search-container .search-form input:not([type="radio"]):not([type="checkbox"]), .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input:not([type="radio"]):not([type="checkbox"]),
-.uk-form select,
-#www-wikipedia-org .search-container .search-form select,
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form select {
+.uk-form select, #www-wikipedia-org .search-container .search-form select, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select {
   vertical-align: middle; }
 
 /* Style
@@ -1607,54 +1486,22 @@
  * 4. Style
  */
 .uk-form select, #www-wikipedia-org .search-container .search-form select, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select,
-.uk-form textarea,
-#www-wikipedia-org .search-container .search-form textarea,
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea,
-.uk-form input:not([type]),
-#www-wikipedia-org .search-container .search-form input:not([type]),
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input:not([type]),
-.uk-form input[type="text"],
-#www-wikipedia-org .search-container .search-form input[type="text"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="text"],
-.uk-form input[type="password"],
-#www-wikipedia-org .search-container .search-form input[type="password"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="password"],
-.uk-form input[type="datetime"],
-#www-wikipedia-org .search-container .search-form input[type="datetime"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime"],
-.uk-form input[type="datetime-local"],
-#www-wikipedia-org .search-container .search-form input[type="datetime-local"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime-local"],
-.uk-form input[type="date"],
-#www-wikipedia-org .search-container .search-form input[type="date"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="date"],
-.uk-form input[type="month"],
-#www-wikipedia-org .search-container .search-form input[type="month"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="month"],
-.uk-form input[type="time"],
-#www-wikipedia-org .search-container .search-form input[type="time"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="time"],
-.uk-form input[type="week"],
-#www-wikipedia-org .search-container .search-form input[type="week"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="week"],
-.uk-form input[type="number"],
-#www-wikipedia-org .search-container .search-form input[type="number"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"],
-.uk-form input[type="email"],
-#www-wikipedia-org .search-container .search-form input[type="email"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="email"],
-.uk-form input[type="url"],
-#www-wikipedia-org .search-container .search-form input[type="url"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="url"],
-.uk-form input[type="search"],
-#www-wikipedia-org .search-container .search-form input[type="search"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"],
-.uk-form input[type="tel"],
-#www-wikipedia-org .search-container .search-form input[type="tel"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="tel"],
-.uk-form input[type="color"],
-#www-wikipedia-org .search-container .search-form input[type="color"],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="color"] {
+.uk-form textarea, #www-wikipedia-org .search-container .search-form textarea, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea,
+.uk-form input:not([type]), #www-wikipedia-org .search-container .search-form input:not([type]), .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input:not([type]),
+.uk-form input[type="text"], #www-wikipedia-org .search-container .search-form input[type="text"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="text"],
+.uk-form input[type="password"], #www-wikipedia-org .search-container .search-form input[type="password"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="password"],
+.uk-form input[type="datetime"], #www-wikipedia-org .search-container .search-form input[type="datetime"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime"],
+.uk-form input[type="datetime-local"], #www-wikipedia-org .search-container .search-form input[type="datetime-local"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime-local"],
+.uk-form input[type="date"], #www-wikipedia-org .search-container .search-form input[type="date"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="date"],
+.uk-form input[type="month"], #www-wikipedia-org .search-container .search-form input[type="month"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="month"],
+.uk-form input[type="time"], #www-wikipedia-org .search-container .search-form input[type="time"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="time"],
+.uk-form input[type="week"], #www-wikipedia-org .search-container .search-form input[type="week"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="week"],
+.uk-form input[type="number"], #www-wikipedia-org .search-container .search-form input[type="number"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"],
+.uk-form input[type="email"], #www-wikipedia-org .search-container .search-form input[type="email"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="email"],
+.uk-form input[type="url"], #www-wikipedia-org .search-container .search-form input[type="url"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="url"],
+.uk-form input[type="search"], #www-wikipedia-org .search-container .search-form input[type="search"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"],
+.uk-form input[type="tel"], #www-wikipedia-org .search-container .search-form input[type="tel"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="tel"],
+.uk-form input[type="color"], #www-wikipedia-org .search-container .search-form input[type="color"], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="color"] {
   /* 1 */
   height: 30px;
   /* 2 */
@@ -1662,135 +1509,71 @@
   /* 3 */
   padding: 4px 6px;
   /* 4 */
-  border: 1px solid #dddddd;
-  background: white;
-  color: #444444; }
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #444; }
   .uk-form select:focus, #www-wikipedia-org .search-container .search-form select:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select:focus,
-  .uk-form textarea:focus,
-  #www-wikipedia-org .search-container .search-form textarea:focus,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea:focus,
-  .uk-form input:not([type]):focus,
-  #www-wikipedia-org .search-container .search-form input:not([type]):focus,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input:not([type]):focus,
-  .uk-form input[type="text"]:focus,
-  #www-wikipedia-org .search-container .search-form input[type="text"]:focus,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="text"]:focus,
-  .uk-form input[type="password"]:focus,
-  #www-wikipedia-org .search-container .search-form input[type="password"]:focus,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="password"]:focus,
-  .uk-form input[type="datetime"]:focus,
-  #www-wikipedia-org .search-container .search-form input[type="datetime"]:focus,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime"]:focus,
-  .uk-form input[type="datetime-local"]:focus,
-  #www-wikipedia-org .search-container .search-form input[type="datetime-local"]:focus,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime-local"]:focus,
-  .uk-form input[type="date"]:focus,
-  #www-wikipedia-org .search-container .search-form input[type="date"]:focus,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="date"]:focus,
-  .uk-form input[type="month"]:focus,
-  #www-wikipedia-org .search-container .search-form input[type="month"]:focus,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="month"]:focus,
-  .uk-form input[type="time"]:focus,
-  #www-wikipedia-org .search-container .search-form input[type="time"]:focus,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="time"]:focus,
-  .uk-form input[type="week"]:focus,
-  #www-wikipedia-org .search-container .search-form input[type="week"]:focus,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="week"]:focus,
-  .uk-form input[type="number"]:focus,
-  #www-wikipedia-org .search-container .search-form input[type="number"]:focus,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"]:focus,
-  .uk-form input[type="email"]:focus,
-  #www-wikipedia-org .search-container .search-form input[type="email"]:focus,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="email"]:focus,
-  .uk-form input[type="url"]:focus,
-  #www-wikipedia-org .search-container .search-form input[type="url"]:focus,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="url"]:focus,
-  .uk-form input[type="search"]:focus,
-  #www-wikipedia-org .search-container .search-form input[type="search"]:focus,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"]:focus,
-  .uk-form input[type="tel"]:focus,
-  #www-wikipedia-org .search-container .search-form input[type="tel"]:focus,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="tel"]:focus,
-  .uk-form input[type="color"]:focus,
-  #www-wikipedia-org .search-container .search-form input[type="color"]:focus,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="color"]:focus {
-    border-color: #dddddd;
+  .uk-form textarea:focus, #www-wikipedia-org .search-container .search-form textarea:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea:focus,
+  .uk-form input:not([type]):focus, #www-wikipedia-org .search-container .search-form input:not([type]):focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input:not([type]):focus,
+  .uk-form input[type="text"]:focus, #www-wikipedia-org .search-container .search-form input[type="text"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="text"]:focus,
+  .uk-form input[type="password"]:focus, #www-wikipedia-org .search-container .search-form input[type="password"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="password"]:focus,
+  .uk-form input[type="datetime"]:focus, #www-wikipedia-org .search-container .search-form input[type="datetime"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime"]:focus,
+  .uk-form input[type="datetime-local"]:focus, #www-wikipedia-org .search-container .search-form input[type="datetime-local"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime-local"]:focus,
+  .uk-form input[type="date"]:focus, #www-wikipedia-org .search-container .search-form input[type="date"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="date"]:focus,
+  .uk-form input[type="month"]:focus, #www-wikipedia-org .search-container .search-form input[type="month"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="month"]:focus,
+  .uk-form input[type="time"]:focus, #www-wikipedia-org .search-container .search-form input[type="time"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="time"]:focus,
+  .uk-form input[type="week"]:focus, #www-wikipedia-org .search-container .search-form input[type="week"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="week"]:focus,
+  .uk-form input[type="number"]:focus, #www-wikipedia-org .search-container .search-form input[type="number"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"]:focus,
+  .uk-form input[type="email"]:focus, #www-wikipedia-org .search-container .search-form input[type="email"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="email"]:focus,
+  .uk-form input[type="url"]:focus, #www-wikipedia-org .search-container .search-form input[type="url"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="url"]:focus,
+  .uk-form input[type="search"]:focus, #www-wikipedia-org .search-container .search-form input[type="search"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"]:focus,
+  .uk-form input[type="tel"]:focus, #www-wikipedia-org .search-container .search-form input[type="tel"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="tel"]:focus,
+  .uk-form input[type="color"]:focus, #www-wikipedia-org .search-container .search-form input[type="color"]:focus, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="color"]:focus {
+    border-color: #ddd;
     outline: 0;
-    background: white;
-    color: #444444; }
+    background: #fff;
+    color: #444; }
   .uk-form select:disabled, #www-wikipedia-org .search-container .search-form select:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select:disabled,
-  .uk-form textarea:disabled,
-  #www-wikipedia-org .search-container .search-form textarea:disabled,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea:disabled,
-  .uk-form input:not([type]):disabled,
-  #www-wikipedia-org .search-container .search-form input:not([type]):disabled,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input:not([type]):disabled,
-  .uk-form input[type="text"]:disabled,
-  #www-wikipedia-org .search-container .search-form input[type="text"]:disabled,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="text"]:disabled,
-  .uk-form input[type="password"]:disabled,
-  #www-wikipedia-org .search-container .search-form input[type="password"]:disabled,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="password"]:disabled,
-  .uk-form input[type="datetime"]:disabled,
-  #www-wikipedia-org .search-container .search-form input[type="datetime"]:disabled,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime"]:disabled,
-  .uk-form input[type="datetime-local"]:disabled,
-  #www-wikipedia-org .search-container .search-form input[type="datetime-local"]:disabled,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime-local"]:disabled,
-  .uk-form input[type="date"]:disabled,
-  #www-wikipedia-org .search-container .search-form input[type="date"]:disabled,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="date"]:disabled,
-  .uk-form input[type="month"]:disabled,
-  #www-wikipedia-org .search-container .search-form input[type="month"]:disabled,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="month"]:disabled,
-  .uk-form input[type="time"]:disabled,
-  #www-wikipedia-org .search-container .search-form input[type="time"]:disabled,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="time"]:disabled,
-  .uk-form input[type="week"]:disabled,
-  #www-wikipedia-org .search-container .search-form input[type="week"]:disabled,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="week"]:disabled,
-  .uk-form input[type="number"]:disabled,
-  #www-wikipedia-org .search-container .search-form input[type="number"]:disabled,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"]:disabled,
-  .uk-form input[type="email"]:disabled,
-  #www-wikipedia-org .search-container .search-form input[type="email"]:disabled,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="email"]:disabled,
-  .uk-form input[type="url"]:disabled,
-  #www-wikipedia-org .search-container .search-form input[type="url"]:disabled,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="url"]:disabled,
-  .uk-form input[type="search"]:disabled,
-  #www-wikipedia-org .search-container .search-form input[type="search"]:disabled,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"]:disabled,
-  .uk-form input[type="tel"]:disabled,
-  #www-wikipedia-org .search-container .search-form input[type="tel"]:disabled,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="tel"]:disabled,
-  .uk-form input[type="color"]:disabled,
-  #www-wikipedia-org .search-container .search-form input[type="color"]:disabled,
-  .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="color"]:disabled {
-    border-color: #dddddd;
-    background-color: whitesmoke;
-    color: #999999; }
+  .uk-form textarea:disabled, #www-wikipedia-org .search-container .search-form textarea:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea:disabled,
+  .uk-form input:not([type]):disabled, #www-wikipedia-org .search-container .search-form input:not([type]):disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input:not([type]):disabled,
+  .uk-form input[type="text"]:disabled, #www-wikipedia-org .search-container .search-form input[type="text"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="text"]:disabled,
+  .uk-form input[type="password"]:disabled, #www-wikipedia-org .search-container .search-form input[type="password"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="password"]:disabled,
+  .uk-form input[type="datetime"]:disabled, #www-wikipedia-org .search-container .search-form input[type="datetime"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime"]:disabled,
+  .uk-form input[type="datetime-local"]:disabled, #www-wikipedia-org .search-container .search-form input[type="datetime-local"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="datetime-local"]:disabled,
+  .uk-form input[type="date"]:disabled, #www-wikipedia-org .search-container .search-form input[type="date"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="date"]:disabled,
+  .uk-form input[type="month"]:disabled, #www-wikipedia-org .search-container .search-form input[type="month"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="month"]:disabled,
+  .uk-form input[type="time"]:disabled, #www-wikipedia-org .search-container .search-form input[type="time"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="time"]:disabled,
+  .uk-form input[type="week"]:disabled, #www-wikipedia-org .search-container .search-form input[type="week"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="week"]:disabled,
+  .uk-form input[type="number"]:disabled, #www-wikipedia-org .search-container .search-form input[type="number"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="number"]:disabled,
+  .uk-form input[type="email"]:disabled, #www-wikipedia-org .search-container .search-form input[type="email"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="email"]:disabled,
+  .uk-form input[type="url"]:disabled, #www-wikipedia-org .search-container .search-form input[type="url"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="url"]:disabled,
+  .uk-form input[type="search"]:disabled, #www-wikipedia-org .search-container .search-form input[type="search"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="search"]:disabled,
+  .uk-form input[type="tel"]:disabled, #www-wikipedia-org .search-container .search-form input[type="tel"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="tel"]:disabled,
+  .uk-form input[type="color"]:disabled, #www-wikipedia-org .search-container .search-form input[type="color"]:disabled, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form input[type="color"]:disabled {
+    border-color: #ddd;
+    background-color: #f5f5f5;
+    color: #999; }
 
 /*
  * Placeholder
  */
 .uk-form :-ms-input-placeholder, #www-wikipedia-org .search-container .search-form :-ms-input-placeholder, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form :-ms-input-placeholder {
-  color: #999999 !important; }
+  color: #999 !important; }
 
 .uk-form ::-moz-placeholder, #www-wikipedia-org .search-container .search-form ::-moz-placeholder, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form ::-moz-placeholder {
-  color: #999999; }
+  color: #999; }
 
 .uk-form ::-webkit-input-placeholder, #www-wikipedia-org .search-container .search-form ::-webkit-input-placeholder, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form ::-webkit-input-placeholder {
-  color: #999999; }
+  color: #999; }
 
 .uk-form :disabled:-ms-input-placeholder, #www-wikipedia-org .search-container .search-form :disabled:-ms-input-placeholder, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form :disabled:-ms-input-placeholder {
-  color: #999999 !important; }
+  color: #999 !important; }
 
 .uk-form :disabled::-moz-placeholder, #www-wikipedia-org .search-container .search-form :disabled::-moz-placeholder, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form :disabled::-moz-placeholder {
-  color: #999999; }
+  color: #999; }
 
 .uk-form :disabled::-webkit-input-placeholder, #www-wikipedia-org .search-container .search-form :disabled::-webkit-input-placeholder, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form :disabled::-webkit-input-placeholder {
-  color: #999999; }
+  color: #999; }
 
 /*
  * Legend
@@ -1820,7 +1603,7 @@
 .uk-form legend:after, #www-wikipedia-org .search-container .search-form legend:after, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form legend:after {
   content: "";
   display: block;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ddd;
   /* 1 */
   width: 100%; }
 
@@ -1850,12 +1633,8 @@ input:not([type]).uk-form-large,
  * Must be after size modifiers
  ========================================================================== */
 .uk-form textarea, #www-wikipedia-org .search-container .search-form textarea, .mediawiki #mw-navigation #mw-head #right-navigation #p-search form textarea,
-.uk-form select[multiple],
-#www-wikipedia-org .search-container .search-form select[multiple],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form select[multiple],
-.uk-form select[size],
-#www-wikipedia-org .search-container .search-form select[size],
-.mediawiki #mw-navigation #mw-head #right-navigation #p-search form select[size] {
+.uk-form select[multiple], #www-wikipedia-org .search-container .search-form select[multiple], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select[multiple],
+.uk-form select[size], #www-wikipedia-org .search-container .search-form select[size], .mediawiki #mw-navigation #mw-head #right-navigation #p-search form select[size] {
   height: auto; }
 
 /* Validation states
@@ -1889,7 +1668,7 @@ input:not([type]).uk-form-large,
   background: none !important; }
 
 .uk-form-blank:focus {
-  border-color: #dddddd !important; }
+  border-color: #ddd !important; }
 
 /* Size sub-modifiers
  ========================================================================== */
@@ -1979,19 +1758,19 @@ select.uk-form-width-mini {
     display: block;
     margin-bottom: 5px;
     font-weight: bold; } }
+
 /* Desktop and bigger */
 @media (min-width: 960px) {
   .uk-form-horizontal .uk-form-label {
     width: 200px;
     margin-top: 5px;
     float: left; }
-
   .uk-form-horizontal .uk-form-controls {
     margin-left: 215px; }
-
   /* Better vertical alignment if controls are checkboxes and radio buttons with text */
   .uk-form-horizontal .uk-form-controls-text {
     padding-top: 5px; } }
+
 /* Sub-object: `uk-form-icon`
  ========================================================================== */
 /*
@@ -2016,7 +1795,7 @@ select.uk-form-width-mini {
   width: 30px;
   margin-top: -7px;
   font-size: 14px;
-  color: #999999;
+  color: #999;
   text-align: center;
   /* 1 */
   pointer-events: none; }
@@ -2038,23 +1817,27 @@ select.uk-form-width-mini {
   font-style: normal;
   font-weight: 400;
   src: url("chrome-extension://__MSG_@@extension_id__/fonts/crimson400.woff2") format("woff2"); }
+
 @font-face {
   font-family: "Crimson";
   font-style: italic;
   font-weight: 400;
   src: url("chrome-extension://__MSG_@@extension_id__/fonts/crimson400-ita.woff2") format("woff2"); }
+
 @font-face {
   font-family: "Crimson";
   font-style: normal;
   font-weight: 700;
   src: url("chrome-extension://__MSG_@@extension_id__/fonts/crimson700.woff2") format("woff2"); }
+
 .no-display {
   display: none !important; }
 
 #www-wikipedia-org html,
 .mediawiki html {
   font-family: "Crimson", serif;
-  color: black; }
+  color: #000; }
+
 #www-wikipedia-org body, #www-wikipedia-org h1, #www-wikipedia-org h2, #www-wikipedia-org h3, #www-wikipedia-org h4, #www-wikipedia-org h5, #www-wikipedia-org h6,
 #www-wikipedia-org pre, #www-wikipedia-org hr, #www-wikipedia-org dl, #www-wikipedia-org dd, #www-wikipedia-org ol, #www-wikipedia-org ul, #www-wikipedia-org figure,
 .mediawiki body,
@@ -2073,7 +1856,8 @@ select.uk-form-width-mini {
 .mediawiki figure {
   margin: 0;
   padding: 0;
-  color: black; }
+  color: #000; }
+
 #www-wikipedia-org body,
 .mediawiki body {
   min-height: 100%;
@@ -2082,8 +1866,8 @@ select.uk-form-width-mini {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
-  color: black;
-  background-color: white;
+  color: #000;
+  background-color: #fff;
   -webkit-text-size-adjust: 100%; }
 
 #www-wikipedia-org a {
@@ -2091,12 +1875,15 @@ select.uk-form-width-mini {
   #www-wikipedia-org a:hover {
     color: #666666;
     text-decoration: none; }
+
 #www-wikipedia-org .central-featured,
 #www-wikipedia-org .bookshelf-container,
 #www-wikipedia-org .langlist {
   display: none; }
+
 #www-wikipedia-org .central-textlogo {
   margin-top: 250px; }
+
 #www-wikipedia-org .search-container {
   margin-bottom: 255px; }
   #www-wikipedia-org .search-container .search-form fieldset {
@@ -2112,9 +1899,11 @@ select.uk-form-width-mini {
       display: none; }
   #www-wikipedia-org .search-container .search-form .formBtn {
     display: none; }
+
 #www-wikipedia-org .language-search {
   margin: 0 auto;
   height: auto; }
+
 #www-wikipedia-org .otherprojects-item a {
   color: #666666; }
   #www-wikipedia-org .otherprojects-item a .icon {
@@ -2122,14 +1911,14 @@ select.uk-form-width-mini {
     filter: grayscale(100%);
     opacity: 0.25; }
   #www-wikipedia-org .otherprojects-item a:hover {
-    color: black; }
+    color: #000; }
     #www-wikipedia-org .otherprojects-item a:hover .icon {
       -webkit-filter: grayscale(0);
       filter: grayscale(0);
       opacity: 1; }
 
 .mediawiki {
-  background-color: white; }
+  background-color: #fff; }
   .mediawiki #mw-page-base,
   .mediawiki #protected-icon,
   .mediawiki .mw-indicator,
@@ -2138,7 +1927,7 @@ select.uk-form-width-mini {
   .mediawiki #mw-navigation #mw-head {
     position: fixed;
     border-bottom: 1px solid #ccc;
-    background-color: white;
+    background-color: #fff;
     z-index: 999; }
     .mediawiki #mw-navigation #mw-head #p-personal,
     .mediawiki #mw-navigation #mw-head #left-navigation {
@@ -2343,7 +2132,7 @@ select.uk-form-width-mini {
         .mediawiki #content #bodyContent #mw-content-text > table {
           margin-bottom: 25px !important;
           border-color: #ccc;
-          background-color: white;
+          background-color: #fff;
           font-family: sans-serif;
           font-size: 14px; }
           .mediawiki #content #bodyContent #mw-content-text > table a {
@@ -2371,7 +2160,7 @@ select.uk-form-width-mini {
         .mediawiki #content #bodyContent #mw-content-text #toc {
           margin: 25px 0;
           padding: 15px;
-          background-color: white; }
+          background-color: #fff; }
           .mediawiki #content #bodyContent #mw-content-text #toc.override {
             display: block;
             position: fixed;
@@ -2393,17 +2182,17 @@ select.uk-form-width-mini {
             .mediawiki #content #bodyContent #mw-content-text #toc > ul li a {
               font-family: sans-serif;
               font-size: 14px;
-              color: black; }
+              color: #000; }
               .mediawiki #content #bodyContent #mw-content-text #toc > ul li a .tocnumber {
                 font-family: "Crimson", serif;
                 font-size: 16px; }
               .mediawiki #content #bodyContent #mw-content-text #toc > ul li a .toctext {
-                border-bottom: 1px solid black; }
+                border-bottom: 1px solid #000; }
               .mediawiki #content #bodyContent #mw-content-text #toc > ul li a:hover, .mediawiki #content #bodyContent #mw-content-text #toc > ul li a:focus {
                 text-decoration: none; }
         .mediawiki #content #bodyContent #mw-content-text .thumb .thumbinner {
           padding: 7px;
-          background-color: white; }
+          background-color: #fff; }
         .mediawiki #content #bodyContent #mw-content-text .thumb .thumbcaption {
           margin-top: 7px;
           font-family: sans-serif;
@@ -2411,7 +2200,7 @@ select.uk-form-width-mini {
         .mediawiki #content #bodyContent #mw-content-text .portal {
           padding: 10px; }
           .mediawiki #content #bodyContent #mw-content-text .portal table {
-            background-color: white !important; }
+            background-color: #fff !important; }
             .mediawiki #content #bodyContent #mw-content-text .portal table a {
               border-bottom: 1px solid #0645ad; }
               .mediawiki #content #bodyContent #mw-content-text .portal table a:visited {
@@ -2422,7 +2211,7 @@ select.uk-form-width-mini {
               border: none; }
             .mediawiki #content #bodyContent #mw-content-text .portal table a {
               font-style: normal;
-              color: black; }
+              color: #000; }
         .mediawiki #content #bodyContent #mw-content-text .div-col ul,
         .mediawiki #content #bodyContent #mw-content-text .refbegin ul {
           margin-left: 0;
@@ -2433,10 +2222,10 @@ select.uk-form-width-mini {
             font-size: 16px; }
             .mediawiki #content #bodyContent #mw-content-text .div-col ul li a,
             .mediawiki #content #bodyContent #mw-content-text .refbegin ul li a {
-              border-bottom: 1px solid black;
+              border-bottom: 1px solid #000;
               font-family: sans-serif;
               font-size: 14px;
-              color: black; }
+              color: #000; }
               .mediawiki #content #bodyContent #mw-content-text .div-col ul li a:hover,
               .mediawiki #content #bodyContent #mw-content-text .refbegin ul li a:hover {
                 text-decoration: none; }
@@ -2458,7 +2247,7 @@ select.uk-form-width-mini {
     margin-top: 0; }
     .page-Main_Page #content #mw-content-text #mp-topbanner {
       padding: 20px;
-      background: white !important; }
+      background: #fff !important; }
       .page-Main_Page #content #mw-content-text #mp-topbanner tbody tr td:first-child table tbody tr td a {
         border-bottom: 0;
         text-decoration: underline; }
@@ -2467,7 +2256,7 @@ select.uk-form-width-mini {
         font-size: 25px;
         font-weight: 700; }
         .page-Main_Page #content #mw-content-text #mp-topbanner tbody tr td:first-child table tbody tr td div:first-child a {
-          color: black; }
+          color: #000; }
       .page-Main_Page #content #mw-content-text #mp-topbanner tbody tr td:first-child table tbody tr td div {
         color: #cccccc; }
         .page-Main_Page #content #mw-content-text #mp-topbanner tbody tr td:first-child table tbody tr td div a {
@@ -2475,8 +2264,8 @@ select.uk-form-width-mini {
       .page-Main_Page #content #mw-content-text #mp-topbanner tbody tr td ul {
         list-style: none; }
         .page-Main_Page #content #mw-content-text #mp-topbanner tbody tr td ul li a {
-          border-bottom-color: black;
-          color: black; }
+          border-bottom-color: #000;
+          color: #000; }
     .page-Main_Page #content #mw-content-text #mp-upper table tbody tr td.MainPageBG {
       border-color: #666666 !important;
-      background: white !important; }
+      background: #fff !important; }
