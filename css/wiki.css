@@ -886,7 +886,7 @@
     width: 30%; }
   .uk-width-small-7-10 {
     width: 70%; }
-  .uk-width-small-9-10, .mediawiki #mw-navigation #mw-head #right-navigation, .mediawiki #content {
+  .uk-width-small-9-10, .mediawiki #mw-navigation #mw-head #right-navigation, .mediawiki #content, .mediawiki #footer {
     width: 90%; } }
 
 /* Tablet and bigger */
@@ -935,7 +935,7 @@
     width: 10%; }
   .uk-width-medium-3-10 {
     width: 30%; }
-  .uk-width-medium-7-10, .mediawiki #mw-navigation #mw-head #right-navigation, .mediawiki #content {
+  .uk-width-medium-7-10, .mediawiki #mw-navigation #mw-head #right-navigation, .mediawiki #content, .mediawiki #footer {
     width: 70%; }
   .uk-width-medium-9-10 {
     width: 90%; } }
@@ -2051,6 +2051,9 @@ select.uk-form-width-mini {
           font-family: "Crimson", serif;
           line-height: 25px;
           font-size: 18px; }
+          .mediawiki #content #bodyContent #mw-content-text > p b a {
+            display: inline-block;
+            line-height: 1em; }
           .mediawiki #content #bodyContent #mw-content-text > p a {
             border-bottom: 1px solid #0645ad; }
             .mediawiki #content #bodyContent #mw-content-text > p a:visited {
@@ -2106,6 +2109,10 @@ select.uk-form-width-mini {
         .mediawiki #content #bodyContent #mw-content-text > ol li {
           font-family: "Crimson", serif;
           font-size: 18px; }
+          .mediawiki #content #bodyContent #mw-content-text > ul li b a,
+          .mediawiki #content #bodyContent #mw-content-text > ol li b a {
+            display: inline-block;
+            line-height: 1em; }
           .mediawiki #content #bodyContent #mw-content-text > ul li a,
           .mediawiki #content #bodyContent #mw-content-text > ol li a {
             border-bottom: 1px solid #0645ad; }
@@ -2135,6 +2142,9 @@ select.uk-form-width-mini {
           background-color: #fff;
           font-family: sans-serif;
           font-size: 14px; }
+          .mediawiki #content #bodyContent #mw-content-text > table b a {
+            display: inline-block;
+            line-height: 1em; }
           .mediawiki #content #bodyContent #mw-content-text > table a {
             border-bottom: 1px solid #0645ad; }
             .mediawiki #content #bodyContent #mw-content-text > table a:visited {
@@ -2182,7 +2192,8 @@ select.uk-form-width-mini {
             .mediawiki #content #bodyContent #mw-content-text #toc > ul li a {
               font-family: sans-serif;
               font-size: 14px;
-              color: #000; }
+              color: #000;
+              border-bottom: 0; }
               .mediawiki #content #bodyContent #mw-content-text #toc > ul li a .tocnumber {
                 font-family: "Crimson", serif;
                 font-size: 16px; }
@@ -2201,6 +2212,9 @@ select.uk-form-width-mini {
           padding: 10px; }
           .mediawiki #content #bodyContent #mw-content-text .portal table {
             background-color: #fff !important; }
+            .mediawiki #content #bodyContent #mw-content-text .portal table b a {
+              display: inline-block;
+              line-height: 1em; }
             .mediawiki #content #bodyContent #mw-content-text .portal table a {
               border-bottom: 1px solid #0645ad; }
               .mediawiki #content #bodyContent #mw-content-text .portal table a:visited {
@@ -2232,6 +2246,9 @@ select.uk-form-width-mini {
         .mediawiki #content #bodyContent #mw-content-text .reflist ol li {
           font-family: "Crimson", serif;
           font-size: 16px; }
+          .mediawiki #content #bodyContent #mw-content-text .reflist ol li .reference-text b a {
+            display: inline-block;
+            line-height: 1em; }
           .mediawiki #content #bodyContent #mw-content-text .reflist ol li .reference-text a {
             border-bottom: 1px solid #0645ad; }
             .mediawiki #content #bodyContent #mw-content-text .reflist ol li .reference-text a:visited {
@@ -2240,6 +2257,15 @@ select.uk-form-width-mini {
               text-decoration: none; }
           .mediawiki #content #bodyContent #mw-content-text .reflist ol li .reference-text a.image {
             border: none; }
+        .mediawiki #content #bodyContent #mw-content-text .redirectMsg ul.redirectText li {
+          background-position-y: 0px; }
+  .mediawiki #footer {
+    margin: 0 auto;
+    border-top: 1px solid #cccccc; }
+    .mediawiki #footer ul li {
+      color: #cccccc; }
+      .mediawiki #footer ul li a {
+        color: #cccccc; }
 
 .page-Main_Page #content {
   margin: 50px auto 0; }
