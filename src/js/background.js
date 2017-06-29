@@ -43,19 +43,19 @@ if (jQuery) {
   //   });
   // }
 
-  chrome.runtime.onInstalled.addListener(function() {
-    optionsPage();
-  });
+  // chrome.runtime.onInstalled.addListener(function() {
+  //   optionsPage();
+  // });
 
-  chrome.extension.onConnect.addListener(function(port) {
-    var tab = port.sender.tab;
-    port.onMessage.addListener(function(info) {
-      var max_length = 1024;
-      if (info.selection.length > max_length)
-        info.selection = info.selection.substring(0, max_length);
-        optionsPage();
-    });
-  });
+  // chrome.extension.onConnect.addListener(function(port) {
+  //   var tab = port.sender.tab;
+  //   port.onMessage.addListener(function(info) {
+  //     var max_length = 1024;
+  //     if (info.selection.length > max_length)
+  //       info.selection = info.selection.substring(0, max_length);
+  //       optionsPage();
+  //   });
+  // });
 
   chrome.browserAction.onClicked.addListener(function(tab) {
     optionsPage();
