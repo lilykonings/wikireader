@@ -6,7 +6,7 @@
   "name": "WikiReader: Wikipedia Simplified",
   "short_name": "WikiReader",
   "description": "Get what you need from Wikipedia with a simple and beautiful interface.",
-  "version": "1.3",
+  "version": "1.4",
 
   "icons": { "16": "icon16.png",
              "48": "icon48.png",
